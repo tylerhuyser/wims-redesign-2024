@@ -1,11 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
-export default function Footer({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Footer() {
 
   return (
     <>

@@ -2,26 +2,28 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-import { useScrollDirection } from '../../../_hooks'
-
+import { useScrollDirection } from '@/app/hooks'
+import { useWindowSize } from '@/app/hooks';
 
 import './Nav.css'
 
-export default function Nav({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Nav() {
   const [navVisibility, setNavVisibility] = useState(false)
 
-  function toggleVisibility (navVisibility) {
+  function toggleVisibility (navVisibility: boolean) {
     const layoutContainer = document.getElementsByClassName('layout-container')
-    if (!navVisibility) {
-      layoutContainer[0].style.position = 'fixed'
-    } else {
-      layoutContainer[0].style.removeProperty('position')
+
+    if (layoutContainer.length > 0) {
+      const element = layoutContainer[0] as HTMLElement;
+
+      if (!navVisibility) {
+        element.style.position = 'fixed'
+      } else {
+        element.style.removeProperty('position')
+      }
+      setNavVisibility(!navVisibility)
     }
-    setNavVisibility(!navVisibility)
+
   }
 
   let windowSize = useWindowSize()
@@ -30,13 +32,16 @@ export default function Nav({
     if (windowSize.width >= 1024) {
       setNavVisibility(false)
       const layoutContainer = document.getElementsByClassName('layout-container')
-      layoutContainer[0].style.removeProperty('position')
+      if (layoutContainer.length > 0) {
+        const element = layoutContainer[0] as HTMLElement; // Assert the type again
+        element.style.removeProperty('position');
+      }
     }
   }, [windowSize])
 
   // Scroll Direction State and Effect:
 
-  const scrollDirection = useScrollDirection('down');
+  const scrollDirection = useScrollDirection({ initialDirection: 'down' });
   const [scrolledToTop, setScrolledToTop] = useState(true);
 
   const handleScroll = () => {
