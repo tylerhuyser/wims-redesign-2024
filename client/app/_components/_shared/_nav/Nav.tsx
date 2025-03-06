@@ -5,6 +5,10 @@ import Link from 'next/link';
 import { useScrollDirection } from '@/app/hooks'
 import { useWindowSize } from '@/app/hooks';
 
+import NavLinks from './NavLinks';
+import NavMenuIcons from './NavMenuIcons';
+import IconLogo from '../_logos/IconLogo';
+
 import './Nav.css'
 
 export default function Nav() {
@@ -102,7 +106,7 @@ return (
         
     </Link>
 
-    <NavLinks context="desktop" onLinkClick={null} navVisibility={null} />
+    <NavLinks context="desktop" onLinkClick={null} navVisibility={false} />
       
     <NavMenuIcons onClick={() => toggleVisibility(navVisibility)} navVisibility={navVisibility} />
 
@@ -111,4 +115,5 @@ return (
   <NavLinks context="mobile" onLinkClick={() => toggleVisibility(navVisibility)} navVisibility={navVisibility} />
     
   </>
+  )
 }
