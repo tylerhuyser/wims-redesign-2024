@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
+import Image from 'next/image'
 import { useScrollDirection } from '@/app/hooks'
 import { useWindowSize } from '@/app/hooks';
 
@@ -100,9 +101,16 @@ return (
       
     <Link href="/" className="nav-logo-container">
 
-      <IconLogo />
+      {/* <IconLogo /> */}
+        
+      <Image
+        src="/_assets/AWOKEN-logo-white.png"
+        width={50}
+        height={50}
+        alt="AWOKEN Logo - White"
+      />
 
-      <p className="nav-logo-title">GAME, SET, BLOG</p>
+      <p className="nav-logo-title">AWOKEN</p>
         
     </Link>
 
