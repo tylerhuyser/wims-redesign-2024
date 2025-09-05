@@ -5,6 +5,7 @@
 
   /* width: calc(100vw - 50px); */
   width: 100%;
+  max-width: 100vw;
   height: calc(75px - 20px);
   padding: 10px 25px;
   background: #F39C12;

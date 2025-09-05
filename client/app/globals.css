@@ -19,3 +19,24 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100vw;
+  /* height: auto; */
+}
+
+#watch-section {
+  height: calc(56.25vw);
+}
+
+#player {
+  max-width: none !important;
+}
