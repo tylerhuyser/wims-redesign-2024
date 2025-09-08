@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faVimeo, faInstagram, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-import "./Social.css"
+import "./Social.module.css"
 
 interface SocialLink {
   name: string;

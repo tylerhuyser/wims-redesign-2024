@@ -1,0 +1,19 @@
+#mission-section {
+  height: 80vh;    
+  padding: 0px;
+  background-color: white;
+
+  flex-direction: row;
+}
+
+.subsection {
+  width: 50vw;
+  height: 100%;
+  padding: 50px;
+
+  overflow-y: scroll;
+}
+
+#mission-copy {
+  outline: 1px solid #F39C12;
+}

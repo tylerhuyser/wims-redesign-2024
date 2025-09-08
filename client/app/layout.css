@@ -27,11 +27,12 @@
     min-height: calc(100vh - 75px);
     /* min-height: 90vh; */
     /* height: 100%; */
-    background: black;
 
     position: relative;
     top: 75px;
+
     /* background: rgba(93, 106, 122, 0.5); */
+    background: black;
 
     display: flex;
     flex-direction: column;
@@ -46,6 +47,15 @@
 /* .body-container:last-child {
   margin-bottom: 25px;
 } */
+
+section, .section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+  width: 100vw;
+}
 
 
 

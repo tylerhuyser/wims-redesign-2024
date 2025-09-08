@@ -1,6 +1,8 @@
+import "./Watch.module.css"
+
 export default function Watch() {
   return (
-    <div className="section" id="watch-section">
+    <section className="section" id="watch-section">
       <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
         <iframe
           src="https://player.vimeo.com/video/347188728?badge=0&autopause=0"
@@ -17,6 +19,6 @@ export default function Watch() {
           title="Walk In My Shoes Media - VR Diversity & Inclusion Training Promo"
         />
       </div>
-    </div>
+    </section>
   );
 }

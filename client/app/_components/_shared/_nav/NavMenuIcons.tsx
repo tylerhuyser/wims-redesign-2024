@@ -1,6 +1,6 @@
 'use client'
 
-import "./NavMenuIcons.css"
+import styles from "./NavMenuIcons.module.css"
 
 interface NavMenuIconsProps {
   onClick: () => void,
@@ -8,14 +8,19 @@ interface NavMenuIconsProps {
 }
 
 export default function NavMenuIcons({ onClick, navVisibility }: NavMenuIconsProps) {
+
+  let menuIconClass =
+    navVisibility
+      ? `${styles.menuIcon} ${styles.open}`
+      : `${styles.menuIcon} ${styles.closed}`
   
   return (
-    <div className='mobile-menu-toggle-icons-container' onClick={onClick} >
+    <div className={styles.mobileMenuToggleIconsContainer} onClick={onClick} >
         
-    <div className={navVisibility ? 'menu-icon open' :  'menu-icon closed'} >
-      <span className='menu-icon-line' id="line-1"></span>
-      <span className='menu-icon-line' id="line-2"></span>
-      <span className='menu-icon-line' id="line-3"></span>
+    <div className={menuIconClass} >
+      <span className={styles.menuIconLine} id={styles.line1}></span>
+      <span className={styles.menuIconLine} id={styles.line2}></span>
+      <span className={styles.menuIconLine} id={styles.line3}></span>
     </div>
 
   </div>

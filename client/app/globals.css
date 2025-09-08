@@ -24,30 +24,3 @@ body {
   display: none;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  width: 100vw;
-  /* height: auto; */
-}
-
-#watch-section {
-  height: calc(56.25vw);
-}
-
-#player {
-  max-width: none !important;
-}
-
-#mission-section {
-  height: 100vh;
-  max-height: 1080px;
-  background-color: white;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
