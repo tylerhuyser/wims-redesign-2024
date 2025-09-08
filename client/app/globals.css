@@ -40,3 +40,14 @@ body {
 #player {
   max-width: none !important;
 }
+
+#mission-section {
+  height: 100vh;
+  max-height: 1080px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
