@@ -11,53 +11,64 @@
   100% {transform: translateX (-100%)}
 }
 
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  width: 100vw;
+  height: 100vw;
+  padding: 50px;
 
-  .carousel-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  outline-offset: -10px;
 
+  font-size: calc(5vw / 2);
+  color: white;
+  letter-spacing: 10px;
+  font-weight: 100;
+
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.carouselContainer {
+  padding: 0px;
+  background-color: #F39C12;
+
+  outline: 1px solid #F39C12;
+}
+
+.active {
+  animation: fade ease-in-out 0.75s;
+}
+
+.inactive {
+  display: none;
+}
+
+.carouselMedia {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .carouselContainer {
     width: 50vw;
-    height: 80vh;
-    padding: 50px;
+    height: calc(100vh - 75px);
 
     outline-offset: -25px;
-
-    font-size: calc(5vw / 2);
-    color: white;
-    letter-spacing: 10px;
-    font-weight: 100;
-
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;
   }
 
-  .carousel-container {
-    padding: 0px;
-    background-color: #F39C12;
-
-    outline: 1px solid #F39C12;
-
+  .carouselContainer {
     animation: slide-in-left ease-in-out 0.75s;
   }
 
-  .carousel-container:hover {
+  .carouselContainer:hover {
     outline: 1px solid white;
   }
 
-  .active {
-    animation: fade ease-in-out 0.75s;
-  }
-
-  .inactive {
-    display: none;
-  }
-
-  .carousel-media {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+}

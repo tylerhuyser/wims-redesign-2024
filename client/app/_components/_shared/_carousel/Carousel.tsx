@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 
-import "./Carousel.module.css"
+import styles from "./Carousel.module.css"
 
 type CarouselItem = {
   path: string
@@ -17,42 +17,39 @@ type CarouselProps = {
 export default function Carousel({ carouselType, data }: CarouselProps) {
 
   const [carouselCount, setCarouselCount] = useState(0)
-  // const { carouselType, data } = props
 
   useEffect(() => {
-    if (carouselType === "mission") {
-      const loginCarouselTimer = setTimeout(() => {
-        if (carouselCount === (data.length - 1)) {
-          setCarouselCount(0)
-        } else {
-          setCarouselCount(carouselCount + 1)
-        }
-      }, 25000)
-      return () => clearTimeout(loginCarouselTimer)
-    } else {
-      const carouselTimer = setTimeout(() => {
-        if (carouselCount === (data.length - 1)) {
-          setCarouselCount(0)
-        } else {
-          setCarouselCount(carouselCount + 1)
-        }
-      }, 5000)
-      return () => clearTimeout(carouselTimer)
-    }
-  }, [carouselCount])
+    const delay = carouselType === "mission" ? 25000 : 5000
+    const timer = setTimeout(() => {
+      setCarouselCount(prev =>
+        prev === data.length - 1 ? 0 : prev + 1
+      )
+    }, delay)
+
+    return () => clearTimeout(timer)
+  }, [carouselCount, carouselType, data.length])
 
   if (carouselType === "mission") {
 
-    let carouselSlides = data.map((gif, index) => (
-      <img className={index === carouselCount ? 'carousel-media mission-carousel-media' : ' carousel-media mission-carousel-media inactive'} src={gif.path} alt={gif.name} key={gif.name} />
-      ))
+    const carouselSlides = data.map((gif, index) => (
+      <img
+        key={gif.name}
+        src={gif.path}
+        alt={gif.name}
+        className={
+          index === carouselCount
+            ? `${styles.carouselMedia} ${styles.missionCarouselMedia}`
+            : `${styles.carouselMedia} ${styles.missionCarouselMedia} ${styles.inactive}`
+        }
+      />
+    ))
 
     return (
-      <div className='carousel-container subsection' id="mission-carousel-container">
+      <div className={`${styles.carouselContainer} subsection`}  id={styles.missionCarouselContainer}>
 
         {carouselSlides}
       
-    </div>
+      </div>
     )
   }
 

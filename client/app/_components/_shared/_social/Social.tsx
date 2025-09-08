@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faVimeo, faInstagram, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-import "./Social.module.css"
+import styles from "./Social.module.css"
 
 interface SocialLink {
   name: string;
@@ -45,11 +45,11 @@ export default function Social() {
   ];
 
   return (
-    <div className="social-container">
+    <div className={styles.socialContainer}>
       {socials.map((social) => (
         <a
           key={social.name}
-          className="social-link"
+          className={styles.socialLink}
           id={`${social.name}-social-link`}
           href={social.url}
           target="_blank"
