@@ -48,7 +48,7 @@
   display: none;
 }
 
-.carouselMedia {
+.carouselMedia, .panoCarouselMedia {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -57,10 +57,18 @@
 @media only screen and (min-width: 1024px) {
 
   .carouselContainer {
-    width: 50vw;
     height: calc(100vh - 75px);
 
     outline-offset: -25px;
+  }
+
+  #missionCarouselContainer {
+    width: 50vw;
+  }
+
+  #panoCarouselContainer {
+    width: 100vw;
+    height: 80vh;
   }
 
   .carouselContainer {
