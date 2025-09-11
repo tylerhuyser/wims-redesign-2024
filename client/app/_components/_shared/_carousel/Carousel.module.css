@@ -81,18 +81,9 @@
     width: 50vw;
   }
 
-  #panoCarouselContainer {
-    width: 100vw;
-    height: 80vh;
-
-    background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center center;
-    background-attachment: fixed;
-
+  /* #panoCarouselContainer {
     outline: 1px solid white;
-  }
+  } */
 
   #panoCarouselContainer:hover {
     outline: 1px solid white;

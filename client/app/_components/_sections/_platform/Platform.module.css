@@ -18,6 +18,9 @@
   justify-content: flex-start;
 
   background-color: #F39C12;
+
+  outline: 1px solid white;
+  outline-offset: 10px;
 }
 
 #platformTextSubsection {
