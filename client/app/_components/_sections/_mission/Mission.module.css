@@ -18,6 +18,8 @@
   align-items: center;
   flex-grow: 1;
 
+  column-gap: 20px;
+
   outline-offset: -10px;
   outline: 1px solid #F39C12;
 }
@@ -49,16 +51,16 @@
   font-style: italic;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
 
-#missionSection {
-  height: calc(100vh - 75px);    
+#missionSection {  
+  height: 50vw;
   flex-direction: row;
 }
 
 .missionSubsection {
   width: 50vw;
-  height: 100%;
+  height: 50vw;
   padding: 50px;
 
   overflow-y: scroll;

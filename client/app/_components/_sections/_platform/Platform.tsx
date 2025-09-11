@@ -1,7 +1,7 @@
 import Carousel from "../../_shared/_carousel/Carousel"
 import renders from "../../../content/awoken-app-renders-data.json"
 
-import styles from "./platform.module.css"
+import styles from "./Platform.module.css"
 
 export default function Platform() {
 
@@ -10,10 +10,9 @@ export default function Platform() {
 
       <div className={`subsection ${styles.platformSubsection}`} id={styles.platformCarouselSubsection}>
 
-        <div className={styles.platformTextContainer}>
+        <div className={styles.platformCarouselTextContainer}>
 
-            <p className={`${styles.platformText} ${styles.platformCarouselText}`} id={styles.platformCarouselTitle}>A<span className={styles.italicText}>WOKE</span>N</p>
-            <br /><br />
+            <p className={`${styles.platformText} ${styles.platformCarouselText}`} id={styles.platformCarouselTitle}>A<span className={styles.italicText}>WOKE</span>N APP</p>
             <p className={`${styles.platformText} ${styles.platformCarouselText}`} id={styles.platformCarouselSubtitle}>A Lifestyle Intervention for Bias & Belonging</p>
           
         </div>

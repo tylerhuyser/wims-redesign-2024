@@ -19,8 +19,9 @@
 
   width: 100vw;
   height: 100vw;
-  padding: 50px;
+  padding: 0px;
 
+  outline: 1px solid #F39C12;
   outline-offset: -10px;
 
   font-size: calc(5vw / 2);
@@ -33,13 +34,6 @@
   box-sizing: border-box;
 }
 
-.carouselContainer {
-  padding: 0px;
-  background-color: #F39C12;
-
-  outline: 1px solid #F39C12;
-}
-
 .active {
   animation: fade ease-in-out 0.75s;
 }
@@ -48,7 +42,7 @@
   display: none;
 }
 
-.carouselMedia, .panoCarouselMedia {
+.carouselMedia {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -59,14 +53,15 @@
   top: 0px;
 }
 
-#platformCarouselContainer, .platformCarouselMedia {
+#platformCarouselContainer {
   display: none;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
 
   .carouselContainer {
-    height: calc(100vh - 75px);
+    width: 50vw;
+    height: 50vw;
 
     outline-offset: -25px;
 
@@ -77,34 +72,36 @@
     outline: 1px solid white;
   }
 
-  #missionCarouselContainer {
-    width: 50vw;
+  #panoCarouselContainer {
+    width: 100vw;
   }
 
-  /* #panoCarouselContainer {
-    outline: 1px solid white;
-  } */
+ .panoCarouselMedia {
+    width: 75%;
+    height: 75%;
 
-  #panoCarouselContainer:hover {
-    outline: 1px solid white;
+    box-shadow: 10px 10px 10px rgba(243, 156, 18, 0.5); 
   }
 
   #platformCarouselContainer {
     display: flex;
+    justify-content: flex-end;
+
+    width: 50vw;
+    height: 30vw;
+
+    outline: none;
+
+    position: relative;
+    bottom: -25px;
   }
 
   .platformCarouselMedia {
-    display: inline
-  }
-
- .panoCarouselMedia {
-    width: calc(60vh * 16 / 9);
-    height: 75%;
-
-    outline: 1px solid white;
-    outline-offset: -25px;
-
-    box-shadow: 10px 10px 10px rgba(243, 156, 18, 0.5); 
+    height: 100%;
+    width: auto;
+    object-fit: scale-down;
+    /* position: relative;
+    bottom: 0px; */
   }
 
 }

@@ -19,8 +19,14 @@
 
   background-color: #F39C12;
 
+  background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
   outline: 1px solid white;
-  outline-offset: 10px;
+  outline-offset: -10px;
 }
 
 #platformTextSubsection {
@@ -32,6 +38,23 @@
 
   outline-offset: -10px;
   outline: 1px solid #F39C12;
+}
+
+.platformCarouselTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+
+  column-gap: 20px;
+
+  position: relative;
+  bottom: -50px;
+
+  background-color: #F39C12;
+
+  filter: drop-shadow(3px 3px 5px #F39C12)
 }
 
 .platformText {
@@ -65,9 +88,15 @@
   font-style: italic;
 }
 
-@media only screen and (min-width: 1024px) {
+.platformCombinedImage {
+  position: relative;
+  bottom: -15px;
+  filter: drop-shadow(3px 3px 5px #333)
+}
+
+@media only screen and (min-width: 768px) {
   #platformSection {
-    height: calc(100vh - 75px);    
+    height: 50vw;    
     flex-direction: row;
   }
 
@@ -77,6 +106,25 @@
     padding: 50px;
   
     overflow-y: scroll;
+  }
+
+  #platformCarouselSubsection {
+    background-image: none;
+    background-color: #F39C12;
+  
+    outline-offset: -25px;
+  }
+  
+  .platformCarouselTextContainer {
+  
+    column-gap: 20px;
+  
+    position: relative;
+    bottom: -50px;
+  
+    background-color: transparent;
+  
+    filter: drop-shadow(0px 0px 0px #F39C12)
   }
 
   #platformTextSubsection {

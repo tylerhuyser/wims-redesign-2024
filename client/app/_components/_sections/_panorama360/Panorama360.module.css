@@ -1,18 +1,19 @@
 #panoramaSection {
   width: 100vw;
-
-  background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
-
-  outline: 1px solid white;
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #panoramaSection {
-    height: 80vh;
+    height: calc(100vw * 9 / 16);
+
+    background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    outline: 1px solid white;
+    outline-offset: -25px;
   }
 }
