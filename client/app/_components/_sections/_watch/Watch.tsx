@@ -6,7 +6,6 @@ export default function Watch() {
       <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
         <iframe
           src="https://player.vimeo.com/video/347188728?badge=0&autopause=0"
-          frameBorder="0"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
           allowFullScreen
           style={{

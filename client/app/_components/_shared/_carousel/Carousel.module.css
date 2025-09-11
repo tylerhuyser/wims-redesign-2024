@@ -54,12 +54,27 @@
   object-fit: cover;
 }
 
+.platformCourselMedia {
+  position: absolute;
+  top: 0px;
+}
+
+#platformCarouselContainer, .platformCarouselMedia {
+  display: none;
+}
+
 @media only screen and (min-width: 1024px) {
 
   .carouselContainer {
     height: calc(100vh - 75px);
 
     outline-offset: -25px;
+
+    animation: slide-in-left ease-in-out 0.75s;
+  }
+
+  .carouselContainer:hover {
+    outline: 1px solid white;
   }
 
   #missionCarouselContainer {
@@ -69,14 +84,36 @@
   #panoCarouselContainer {
     width: 100vw;
     height: 80vh;
-  }
 
-  .carouselContainer {
-    animation: slide-in-left ease-in-out 0.75s;
-  }
+    background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
 
-  .carouselContainer:hover {
     outline: 1px solid white;
+  }
+
+  #panoCarouselContainer:hover {
+    outline: 1px solid white;
+  }
+
+  #platformCarouselContainer {
+    display: flex;
+  }
+
+  .platformCarouselMedia {
+    display: inline
+  }
+
+ .panoCarouselMedia {
+    width: calc(60vh * 16 / 9);
+    height: 75%;
+
+    outline: 1px solid white;
+    outline-offset: -25px;
+
+    box-shadow: 10px 10px 10px rgba(243, 156, 18, 0.5); 
   }
 
 }
