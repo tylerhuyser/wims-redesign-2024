@@ -74,6 +74,11 @@
 
   #panoCarouselContainer {
     width: 100vw;
+    outline: none;
+  }
+
+  #panoCarouselContainer {
+    outline: none;
   }
 
  .panoCarouselMedia {
@@ -92,8 +97,14 @@
 
     outline: none;
 
-    position: relative;
-    bottom: -25px;
+    position: absolute;
+    bottom: 25px;
+  }
+
+  #platformCarouselContainer:hover {
+
+    outline: none;
+
   }
 
   .platformCarouselMedia {
