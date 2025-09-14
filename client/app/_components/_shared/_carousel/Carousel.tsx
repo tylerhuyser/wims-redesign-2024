@@ -31,7 +31,7 @@ type CarouselItem = {
 }
 
 type CarouselProps = {
-  carouselType: 'missionCarousel' | 'panorama360' | 'platformCarousel' | 'default' // tighten if you only expect certain strings
+  carouselType: 'missionCarousel' | 'panorama360' | 'platformCarousel' | 'workplaceVRCarousel' | 'default' // tighten if you only expect certain strings
   data: CarouselItem[]
 }
 
@@ -52,14 +52,20 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
     return () => clearTimeout(timer)
   }, [carouselCount, carouselType, data.length])
 
-  if (carouselType === "missionCarousel" || carouselType === "platformCarousel") {
+
+  if (carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel") {
     const isMission = carouselType === 'missionCarousel'
+    const isPlatform = carouselType === 'platformCarousel'
     const containerClass = isMission
       ? styles.missionCarouselContainer
-      : styles.platformCarouselContainer
+      : isPlatform
+        ? styles.platformCarouselContainer
+        : styles.workplaceVRCarouselContainer
     const mediaClass = isMission
       ? styles.missionCarouselMedia
-      : styles.platformCarouselMedia
+      : isPlatform
+        ? styles.platformCarouselMedia
+        : styles.workplaceVRCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
       <img
