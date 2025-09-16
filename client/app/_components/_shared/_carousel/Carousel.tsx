@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
 import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
+import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -64,14 +65,14 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
       : isMission
         ? missionCarouselStyles.missionCarouselContainer
         : isPlatform
-          ? styles.platformCarouselContainer
+          ? platformCarouselStyles.platformCarouselContainer
           : styles.workplaceVRCarouselContainer
     const mediaClass = isHero
       ? heroCarouselStyles.heroCarouselMedia
       : isMission
         ? missionCarouselStyles.missionCarouselMedia
         : isPlatform
-          ? styles.platformCarouselMedia
+          ? platformCarouselStyles.platformCarouselMedia
           : styles.workplaceVRCarouselMedia
 
     const carouselSlides = data.map((item, index) => (

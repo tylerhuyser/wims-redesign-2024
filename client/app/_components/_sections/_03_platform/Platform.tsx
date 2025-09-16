@@ -30,7 +30,6 @@ export default function Platform() {
 
       <div className={`subsection ${styles.platformSubsection}`} id={styles.platformTextSubsection}>
         <p className={styles.platformText} id={styles.platformTitle}>Bias isn't overcome in just a day. It takes practice.</p>
-        <br /><br />
         <p className={styles.platformText} id={styles.platformSubtitle}>
           • Personalized onboarding <br />
           • Daily micro-lessons & reflections <br />
