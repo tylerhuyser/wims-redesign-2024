@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
+import heroCarouselStyles from "../../_sections/_0_hero/Hero.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -31,7 +32,7 @@ type CarouselItem = {
 }
 
 type CarouselProps = {
-  carouselType: 'missionCarousel' | 'panorama360' | 'platformCarousel' | 'workplaceVRCarousel' | 'default' // tighten if you only expect certain strings
+  carouselType: 'heroCarousel' | 'missionCarousel' | 'panorama360' | 'platformCarousel' | 'workplaceVRCarousel' | 'default' // tighten if you only expect certain strings
   data: CarouselItem[]
 }
 
@@ -53,19 +54,24 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   }, [carouselCount, carouselType, data.length])
 
 
-  if (carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel") {
+  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel") {
+    const isHero = carouselType === 'heroCarousel'
     const isMission = carouselType === 'missionCarousel'
     const isPlatform = carouselType === 'platformCarousel'
-    const containerClass = isMission
-      ? styles.missionCarouselContainer
-      : isPlatform
-        ? styles.platformCarouselContainer
-        : styles.workplaceVRCarouselContainer
-    const mediaClass = isMission
-      ? styles.missionCarouselMedia
-      : isPlatform
-        ? styles.platformCarouselMedia
-        : styles.workplaceVRCarouselMedia
+    const containerClass = isHero
+      ? heroCarouselStyles.heroCarouselContainer
+      : isMission
+        ? styles.missionCarouselContainer
+        : isPlatform
+          ? styles.platformCarouselContainer
+          : styles.workplaceVRCarouselContainer
+    const mediaClass = isHero
+      ? heroCarouselStyles.heroCarouselMedia
+      : isMission
+        ? styles.missionCarouselMedia
+        : isPlatform
+          ? styles.platformCarouselMedia
+          : styles.workplaceVRCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
       <img

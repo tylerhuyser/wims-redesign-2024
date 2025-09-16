@@ -1,3 +1,4 @@
+import Hero from "./_components/_sections/_0_hero/Hero"
 import Watch from "./_components/_sections/_watch/Watch"
 import Mission from "./_components/_sections/_mission/Mission"
 import Panorama360 from "./_components/_sections/_panorama360/Panorama360";
@@ -8,6 +9,7 @@ import WorkplaceVR from "./_components/_sections/_workplaceVR/WorkplaceVR";
 export default function Home() {
   return (
     <>
+      <Hero />
       <Watch />
       <Mission />
       <Panorama360 />

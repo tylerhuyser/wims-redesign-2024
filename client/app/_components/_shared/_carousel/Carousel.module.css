@@ -34,14 +34,6 @@
   box-sizing: border-box;
 }
 
-.active {
-  animation: fade ease-in-out 0.75s;
-}
-
-.inactive {
-  display: none;
-}
-
 .carouselMedia {
   height: 100%;
   width: 100%;
@@ -54,6 +46,14 @@
 }
 
 #platformCarouselContainer {
+  display: none;
+}
+
+.active {
+  animation: fade ease-in-out 0.75s;
+}
+
+.inactive {
   display: none;
 }
 
