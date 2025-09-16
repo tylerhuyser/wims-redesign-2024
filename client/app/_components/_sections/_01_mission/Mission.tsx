@@ -1,5 +1,5 @@
 import Carousel from '../../_shared/_carousel/Carousel'
-import gifs from "../../../content/mission-carousel-data.json"
+import missionGifs from "../../../content/mission-carousel-data.json"
 
 import styles from './Mission.module.css'
 
@@ -7,7 +7,7 @@ export default function Mission() {
   return (
     <section className="section" id={styles.missionSection}>
 
-      <Carousel carouselType="missionCarousel" data={gifs} />
+      <Carousel carouselType="missionCarousel" data={missionGifs} />
 
       <div className={`subsection ${styles.missionSubsection}`} id={styles.missionTextSubsection}>
         <p className={styles.missionText} id={styles.missionTitle}><strong className={styles.boldText}>AWOKEN</strong> strengthens teams and communities.</p>

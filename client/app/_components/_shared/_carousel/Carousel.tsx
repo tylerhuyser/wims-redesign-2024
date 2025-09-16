@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
-import heroCarouselStyles from "../../_sections/_0_hero/Hero.module.css"
+import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
+import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -61,14 +62,14 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
     const containerClass = isHero
       ? heroCarouselStyles.heroCarouselContainer
       : isMission
-        ? styles.missionCarouselContainer
+        ? missionCarouselStyles.missionCarouselContainer
         : isPlatform
           ? styles.platformCarouselContainer
           : styles.workplaceVRCarouselContainer
     const mediaClass = isHero
       ? heroCarouselStyles.heroCarouselMedia
       : isMission
-        ? styles.missionCarouselMedia
+        ? missionCarouselStyles.missionCarouselMedia
         : isPlatform
           ? styles.platformCarouselMedia
           : styles.workplaceVRCarouselMedia
