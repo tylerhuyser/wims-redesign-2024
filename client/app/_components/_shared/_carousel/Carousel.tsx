@@ -6,6 +6,7 @@ import styles from './Carousel.module.css'
 import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
+import workplaceVRCarouselStyles from "../../_sections/_05_workplaceVR/WorkplaceVR.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -66,14 +67,14 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
         ? missionCarouselStyles.missionCarouselContainer
         : isPlatform
           ? platformCarouselStyles.platformCarouselContainer
-          : styles.workplaceVRCarouselContainer
+          : workplaceVRCarouselStyles.workplaceVRCarouselContainer
     const mediaClass = isHero
       ? heroCarouselStyles.heroCarouselMedia
       : isMission
         ? missionCarouselStyles.missionCarouselMedia
         : isPlatform
           ? platformCarouselStyles.platformCarouselMedia
-          : styles.workplaceVRCarouselMedia
+          : workplaceVRCarouselStyles.workplaceVRCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
       <img

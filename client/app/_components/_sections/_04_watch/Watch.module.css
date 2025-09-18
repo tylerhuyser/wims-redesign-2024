@@ -4,27 +4,35 @@
   align-items: center;
   justify-content: center;
 
-  width: 100vw;
+  width: 100%;
   height: auto;
-  aspect-ratio: 4 / 4;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 
-  background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-orange.png');
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  /* outline: 1px solid #f39c12;
+  outline-offset: -10px; */
 
-  outline: 1px solid white;
-  outline-offset: -10px;
+  position: relative;
+  z-index: 1;
 }
 
-.watchTextContainer {
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* .watchTextContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 
 .watchText {
   font-family: Arial, Helvetica, sans-serif;
@@ -48,7 +56,7 @@
   display: inline;
   font-weight: 100;
   font-style: italic;
-}
+} */
 
 #player {
   max-width: none !important;
@@ -59,7 +67,11 @@
 
   #watchSection {
     aspect-ratio: 16 / 9;
-    outline-offset: -25px;
+    outline-offset: -50px;
+  }
+
+  .video {
+    min-height: 50vh;
   }
 
   #watchTitle {
