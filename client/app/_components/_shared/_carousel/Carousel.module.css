@@ -18,7 +18,8 @@
   justify-content: center;
 
   width: 100vw;
-  height: 100vw;
+  /* height: 100vw; */
+  min-height: 100vw;
   padding: 0px;
 
   outline: 1px solid #F39C12;
@@ -52,7 +53,8 @@
 
   .carouselContainer {
     width: 50vw;
-    height: 50vw;
+    /* height: 50vw; */
+    min-height: 50vw;
 
     outline-offset: -25px;
 

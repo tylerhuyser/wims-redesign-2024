@@ -1,5 +1,5 @@
 .layout-container {
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100vh; */
   overflow-x: hidden;
   
@@ -22,14 +22,10 @@
 .main-container {
     width: 100%;
     min-height: calc(100vh - 75px);
-    /* min-height: 90vh; */
-    /* height: 100%; */
 
     position: relative;
     top: 75px;
 
-    /* background: rgba(93, 106, 122, 0.5); */
-    /* background: black; */
 
     display: flex;
     flex-direction: column;
@@ -42,17 +38,13 @@
     box-sizing: border-box;
 }
 
-/* .body-container:last-child {
-  margin-bottom: 25px;
-} */
-
 section, .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 

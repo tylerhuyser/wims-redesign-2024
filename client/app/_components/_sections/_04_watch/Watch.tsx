@@ -1,9 +1,17 @@
-import "./Watch.module.css"
+import styles from "./Watch.module.css"
 
 export default function Watch() {
   return (
-    <section className="section" id="watch-section">
-      <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+    <section className="section" id={styles.watchSection}>
+
+      <div className={styles.watchTextContainer}>
+
+          <p className={styles.watchText} id={styles.watchTitle}>A<span className={styles.italicText}>WOKE</span>N VR</p>
+          <p className={styles.watchText} id={styles.watchSubtitle}>A Inclusvity Intervention for the Workplace.</p>
+          
+      </div>
+
+      <div style={{ padding: "56.25% 0 0 0", position: "relative", width: "80vw", height: "auto", aspectRatio: "16 / 9" }}>
         <iframe
           src="https://player.vimeo.com/video/347188728?badge=0&autopause=0"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"

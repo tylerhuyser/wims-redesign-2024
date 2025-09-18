@@ -1,5 +1,5 @@
 #workplaceVRSection {
-  height: calc(200vw - 75px);    
+  height: calc(200vw);    
   padding: 0px;
   /* background-color: white; */
   flex-direction: column-reverse;
@@ -7,7 +7,7 @@
 
 .workplaceVRSubsection {
   width: 100vw;
-  height: calc(100vw - calc(75px / 2));
+  height: calc(100vw);
   padding: 25px;
 }
 

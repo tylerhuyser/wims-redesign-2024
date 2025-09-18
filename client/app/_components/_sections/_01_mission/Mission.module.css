@@ -1,14 +1,14 @@
 /* General Containers */
 
 #missionSection {
-  height: calc(200vw - 75px);    
+  min-height: 100%;
   padding: 0px;
   flex-direction: column-reverse;
 }
 
 .missionSubsection {
-  width: 100vw;
-  height: calc(100vw - calc(75px / 2));
+  width: 100%;
+  min-height: 100vw;
   padding: 25px;
 }
 
@@ -60,13 +60,13 @@
 /* General  */
 
   #missionSection {  
-    height: 50vw;
+    min-height: 100%;
     flex-direction: row;
   }
 
   .missionSubsection {
     width: 50vw;
-    height: 50vw;
+    min-height: 50vw;
     padding: 50px;
 
     overflow-y: scroll;

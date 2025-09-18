@@ -1,8 +1,7 @@
 /* General */
 
 #heroSection {
-  width: 100vw;
-  height: 100vw; 
+  min-height: 80vh;
   padding: 0px;
 
   flex-direction: column;
@@ -103,7 +102,7 @@
 /* General  */
 
   #heroSection {
-    height: calc(100vh - 75px);  
+    min-height: 80vh;
   }
 
 /* Text */
@@ -130,7 +129,7 @@
 
   .heroImageWrapper {
     position: relative;
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
     height: 100%;
     overflow: hidden; /* keep overlay within */
   }
