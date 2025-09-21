@@ -1,5 +1,6 @@
 import Hero from "./_components/_sections/_00_hero/Hero"
 import Mission from "./_components/_sections/_01_mission/Mission"
+import Quotes from "./_components/_sections/_02_quotes/Quotes"
 import Platform from "./_components/_sections/_03_platform/Platform";
 import Watch from "./_components/_sections/_04_watch/Watch"
 import Panorama360 from "./_components/_sections/_panorama360/Panorama360";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <Mission />
+      <Quotes />
       <Platform />
       <Watch />
       <WorkplaceVR />

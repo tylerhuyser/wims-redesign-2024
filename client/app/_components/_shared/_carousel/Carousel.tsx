@@ -29,15 +29,40 @@ const PanoramaViewer = dynamic(
   { ssr: false }
 )
 
-type CarouselItem = {
+// type CarouselItem = {
+//   path: string
+//   name: string
+// }
+
+type ImageCarouselItem = {
   path: string
   name: string
 }
 
-type CarouselProps = {
-  carouselType: 'heroCarousel' | 'missionCarousel' | 'panorama360' | 'platformCarousel' | 'workplaceVRCarousel' | 'default' // tighten if you only expect certain strings
-  data: CarouselItem[]
+type QuoteCarouselItem = {
+  quote: string
+  author: string
 }
+
+// Image-based carousels
+type ImageCarouselProps = {
+  carouselType:
+    | 'heroCarousel'
+    | 'missionCarousel'
+    | 'platformCarousel'
+    | 'workplaceVRCarousel'
+    | 'panorama360'
+  data: ImageCarouselItem[]
+}
+
+// Quote-based carousel
+type QuoteCarouselProps = {
+  carouselType: 'quotes'
+  data: QuoteCarouselItem[]
+}
+
+// Union of the two
+type CarouselProps = ImageCarouselProps | QuoteCarouselProps
 
 export default function Carousel({ carouselType, data }: CarouselProps) {
 
@@ -131,7 +156,24 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
       <div className={`${styles.carouselContainer} subsection`} id={styles.panoCarouselContainer}>
         {carouselSlides}
       </div>
-  )}
+    )
+  }
+  
+  if (carouselType === "quotes") {
+    
+    let carouselSlides = data.map((slide, index) => (
+      <p className={index === carouselCount ? 'landing-page-carousel-copy active' : 'landing-page-carousel-copy inactive'} key={slide.author}>
+        <span className="landing-page-carousel-quote">{slide.quote}</span><br /><span className='landing-page-carousel-author'>{`- ${slide.author}`}</span>
+      </p>))
+
+    return (
+      <div className='landing-page-carousel-container' >
+
+      {carouselSlides}
+      
+      </div>
+    )
+  }
 
   
 

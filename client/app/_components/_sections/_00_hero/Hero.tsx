@@ -1,5 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
-import heroImages from "../../../content/hero-data.json"
+import heroImages from "../../../content/00-hero-data.json"
 
 import styles from "./Hero.module.css"
 

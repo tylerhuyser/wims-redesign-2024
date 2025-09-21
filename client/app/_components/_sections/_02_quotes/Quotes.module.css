@@ -1,0 +1,18 @@
+#quotesSection {
+
+  width: 100%;
+  min-height: 100vw;
+  padding: 25px;
+
+  background-color: #F39C12;
+
+  outline-offset: -10px;
+  outline: 1px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+  #quotesSection {
+    min-height: 50vw;
+    outline-offset: -25px;
+  }
+}

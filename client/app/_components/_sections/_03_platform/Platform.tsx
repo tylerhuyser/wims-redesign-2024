@@ -1,5 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
-import renders from "../../../content/awoken-app-renders-data.json"
+import platformImages from "../../../content/03-platform-carousel-data.json"
 
 import styles from "./Platform.module.css"
 
@@ -17,7 +17,7 @@ export default function Platform() {
           
         </div>
 
-        <Carousel carouselType="platformCarousel" data={renders} />
+        <Carousel carouselType="platformCarousel" data={platformImages} />
 
         <img
           key='awoken-platform-render-combined'

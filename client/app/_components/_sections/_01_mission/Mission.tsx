@@ -1,5 +1,5 @@
 import Carousel from '../../_shared/_carousel/Carousel'
-import missionGifs from "../../../content/mission-carousel-data.json"
+import missionGifs from "../../../content/01-mission-carousel-data.json"
 
 import styles from './Mission.module.css'
 

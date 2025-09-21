@@ -1,5 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
-import images from "../../../content/workplace-vr-carousel-data.json"
+import workplaceVRImages from "../../../content/05-workplace-vr-carousel-data.json"
 
 import styles from "./WorkplaceVR.module.css"
 
@@ -8,7 +8,7 @@ export default function WorkplaceVR() {
   return (
     <section className="section" id={styles.workplaceVRSection}>
 
-      <Carousel carouselType="workplaceVRCarousel" data={images} />
+      <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} />
 
       <div className={`subsection ${styles.workplaceVRSubsection}`} id={styles.workplaceVRTextSubsection}>
         <p className={styles.workplaceVRText} id={styles.workplaceVRTitle}><strong className={styles.boldText}>AWOKEN VR</strong>: Immersive Empathy Training</p>
