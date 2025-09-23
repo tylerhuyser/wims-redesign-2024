@@ -20,6 +20,12 @@
   justify-content: center;
 }
 
+.heroLogo {
+  width: 15vh;
+  height: auto;
+  z-index: 2;
+}
+
 /* Text Subsection */
 
 #heroTextSubsection {

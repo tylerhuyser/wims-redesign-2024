@@ -19,6 +19,7 @@ export default function Hero() {
 
   return (
     <section className="section" id={styles.heroSection} >
+      <img className={styles.heroLogo} src="/images/logos/AWOKEN-logo-white.png" />
       <div className={`subsection ${styles.heroSubsection}`} id={styles.heroTextSubsection} >
         <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.italicText}>WOKE</span>N</p>
         <p className={styles.heroText} id={styles.heroSubtitle}>Inspiring Inclusivity through Innovative Technology and Storytelling.</p>
