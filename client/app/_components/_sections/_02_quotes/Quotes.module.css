@@ -8,6 +8,40 @@
 
   outline-offset: -10px;
   outline: 1px solid white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quoteTextContainer {
+  max-width: 60ch;
+}
+
+.quoteText {
+  font-size: calc(7vw / 2);
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 100;
+
+  max-width: 60ch;
+  text-align: center;
+}
+
+.quote::before {
+  content: open-quote;
+  color: white;
+}
+
+.quote::after {
+  content: close-quote;
+  color: white;
+}
+
+.quoteAuthor {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -15,4 +49,6 @@
     min-height: 50vw;
     outline-offset: -25px;
   }
+
+
 }

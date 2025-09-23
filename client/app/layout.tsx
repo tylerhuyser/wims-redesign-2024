@@ -34,7 +34,7 @@ export default function RootLayout({
 
           {/* <Footer /> */}
 
-          <Social />
+          {/* <Social /> */}
           
         </div>
       </body>
