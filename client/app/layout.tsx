@@ -1,3 +1,12 @@
+import { Lato } from "next/font/google"
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '700', '900'],
+  style: ['normal', 'italic'],
+  display: 'swap'
+})
+
 import Nav from "./_components/_shared/_nav/Nav";
 import Footer from './_components/_shared/_footer/Footer'
 import Social from './_components/_shared/_social/Social'
@@ -20,7 +29,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en" data-arp="">
+    <html lang="en" data-arp="" className={lato.className}>
       {/* <GoogleAnalytics gaID="GTM-TLX3ZGT2" />
       <GoogleTagManager gtmId="GTM-TLX3ZGT2" /> */}
       <body>
