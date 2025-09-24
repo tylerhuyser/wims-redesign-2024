@@ -1,0 +1,228 @@
+/* General */
+
+#heroSection {
+  min-height: 80vh;
+  padding: 0px;
+
+  flex-direction: column;
+
+  background-color: #F39C12;
+
+  position: relative;
+
+  display: grid;
+  place-items: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 2rem;
+  padding-block: 2rem;
+  
+  width: min(90%, 70rem, 1200px);
+  
+  /* width: 100%; */
+  /* max-width: 1200px; */
+  height: 100%;
+
+}
+
+.heroSubsection {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroLogo {
+  width: 15vh;
+  height: auto;
+  z-index: 2;
+}
+
+/* Text Subsection */
+
+#heroTextSubsection {
+  flex-direction: column;
+
+  z-index: 2;
+}
+
+.heroText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
+  color: white;
+  text-align: left;
+}
+
+#heroTitle {
+  font-size:  clamp(4rem, 10vw, calc(10vh - 8 * 2rem));
+  font-size: clamp(4rem, 8vh, 10rem);
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: 0.1em;
+  font-weight: 500;
+
+  /* margin-bottom: 0.5rem; */
+
+  position: relative;
+
+  grid-column: span 3;
+}
+
+#heroSubtitle, #heroSub {
+  font-size:  clamp(3rem, 4vh, 4rem);
+  line-height: 1.1;
+
+  /* width: 75%; */
+  max-width: 60ch;
+
+  grid-column: span 2;
+}
+
+#heroSub {
+  grid-row-start: 7;
+  grid-column: 3 / span 2;
+
+  text-align: right;
+}
+
+.boldText {
+  display: inline;
+
+  /* font-family: helvetica; */
+  font-weight: 500;
+  /* font-style: bold; */
+  
+  /* position: relative;
+  left: -1.5vw; */
+}
+
+/* Image Section */
+
+#heroImagesSubsection {
+  display: none;
+}
+
+/* Carousel */
+
+#heroCarouselContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heroCarouselMedia {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.8) brightness(0.9);
+  mix-blend-mode: multiply;
+  background-color: #F39C12;
+}
+
+#heroCarouselContainer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ec7009; 
+  background: #d66406; 
+  mix-blend-mode: screen; 
+  opacity: 0.8; 
+}
+
+@media only screen and (min-width: 768px) {
+
+/* General  */
+
+  #heroSection {
+    min-height: 80vh;
+  }
+
+/* Text */
+
+  #heroTitle {
+    /* font-size: 10vw; */
+  }
+
+  #heroSubtitle {
+    /* font-size: 4vw; */
+  }
+
+  .italicText {
+    left: -1.25vw;
+  }
+
+/* Image Section */
+
+  #heroImagesSubsection {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  }
+
+  .heroImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* keep overlay within */
+
+  }
+
+  .heroImageWrapper:nth-of-type(1){
+    grid-column-start: 1;
+    grid-row: 4 / span 4;
+  }
+
+  .heroImageWrapper:nth-of-type(2) {
+    grid-column-start: 2;
+    grid-row: 3/ span 4;
+  }
+
+  .heroImageWrapper:nth-of-type(3) {
+    grid-column-start: 3;
+    grid-row: 2 / span 4;
+  }
+
+  .heroImageWrapper:nth-of-type(4) {
+    grid-column-start: 4;
+    grid-row: 1 / span 4;
+  }
+
+  .heroImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.5) brightness(0.9);
+    mix-blend-mode: multiply;
+    background-color: #F39C12;
+  }
+
+  .heroImageWrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ec7009; 
+    mix-blend-mode: screen; 
+    opacity: 0.8; 
+  }
+
+
+  .heroImage1 {
+    object-position: -15vw;
+  }
+
+  /* Carousel Section */
+
+  #heroCarouselContainer {
+    display: none;
+  }
+}

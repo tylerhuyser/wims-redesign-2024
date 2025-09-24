@@ -7,11 +7,13 @@
   flex-direction: column;
   align-items: center;
 
-  background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-white.png');
+  /* background-image: url('/images/logos/AWOKEN-logo-seamless-pattern-white.png');
   background-size: contain;
   background-repeat: repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+
+  background-color: #F39C12;
 
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */

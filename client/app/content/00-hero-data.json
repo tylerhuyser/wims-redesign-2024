@@ -1,14 +1,18 @@
 [
   {
     "name": "hero-01",
-    "path": "/images/hero/hero-01.jpg" 
+    "path": "/images/00-hero/hero-01.jpg" 
+  },
+  {
+    "name": "hero-04",
+    "path": "/images/00-hero/hero-04.jpg" 
   },
   {
     "name": "hero-02",
-    "path": "/images/hero/hero-02.jpg" 
+    "path": "/images/00-hero/hero-02.jpg" 
   },
   {
     "name": "hero-03",
-    "path": "/images/hero/hero-03.jpg" 
+    "path": "/images/00-hero/hero-03.jpg" 
   }
 ]
