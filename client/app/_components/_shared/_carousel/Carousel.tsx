@@ -174,7 +174,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
       </p>))
 
     return (
-      <div className={`${styles.carouselContainer} subsection`} id={styles.quotesCarouselContainer} >
+      <div className={`${styles.carouselContainer} subsection`} id={quotesCarouselStyles.quotesCarouselContainer} >
 
       {carouselSlides}
       

@@ -1,13 +1,18 @@
 #quotesSection {
-
   width: 100%;
-  min-height: 100vw;
-  padding: 25px;
+  min-height: 50vh;
+  padding-block: 2rem;
 
   background-color: #F39C12;
 
   outline-offset: -10px;
   outline: 1px solid white;
+
+}
+
+.quotesContentContainer {
+  width: min(90%, 1200px);
+  min-height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -15,18 +20,27 @@
   justify-content: center;
 }
 
-.quoteTextContainer {
-  max-width: 60ch;
-}
-
 .quoteText {
-  font-size: calc(7vw / 2);
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+
   color: white;
   letter-spacing: 2px;
-  font-weight: 100;
 
   max-width: 60ch;
   text-align: center;
+}
+
+.quote {
+  font-weight: 300;
+}
+
+.quoteAuthor {
+  
+  display: inline-block;
+  margin-top: 0.5rem;
+
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 100;
 }
 
 .quote::before {
@@ -39,14 +53,13 @@
   color: white;
 }
 
-.quoteAuthor {
-  display: inline-block;
-  margin-top: 10px;
+#quotesCarouselContainer {
+  outline: 1px solid transparent;
 }
 
 @media only screen and (min-width: 768px) {
   #quotesSection {
-    min-height: 50vw;
+    min-height: 50vh;
     outline-offset: -25px;
   }
 

@@ -8,8 +8,12 @@ export default function Quotes() {
   return (
     <section className="section" id={styles.quotesSection}>
 
-      <Carousel carouselType="quotes" data={quotesData} />
+      <div className={styles.quotesContentContainer}>
 
+        <Carousel carouselType="quotes" data={quotesData} />
+
+      </div>
+      
     </section>
   )
 }
