@@ -1,6 +1,7 @@
-import Hero from "./_components/_sections/_00_hero/Hero"
+// import Hero from "./_components/_sections/_00_hero/Hero"
 import HeroRevised from "./_components/_sections/_00_hero/HeroRevised"
-import Mission from "./_components/_sections/_01_mission/Mission"
+// import Mission from "./_components/_sections/_01_mission/Mission"
+import Mission from "./_components/_sections/_01_mission/MissionRevised"
 import Quotes from "./_components/_sections/_02_quotes/Quotes"
 import Platform from "./_components/_sections/_03_platform/Platform";
 import Watch from "./_components/_sections/_04_watch/Watch"

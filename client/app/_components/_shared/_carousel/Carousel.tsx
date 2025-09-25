@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
 import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
-import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
+import missionCarouselStyles from "../../_sections/_01_mission/MissionRevised.module.css"
 import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
 import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
 import workplaceVRCarouselStyles from "../../_sections/_05_workplaceVR/WorkplaceVR.module.css"
@@ -116,7 +116,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
     ))
 
     return (
-      <div className={`${styles.carouselContainer} subsection`} id={containerClass}>
+      <div className={`${styles.carouselContainer} ${containerClass} subsection`} id={containerClass}>
         {carouselSlides}
       </div>
     )

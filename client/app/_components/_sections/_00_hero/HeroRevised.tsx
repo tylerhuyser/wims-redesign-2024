@@ -21,19 +21,22 @@ export default function HeroRevised() {
   return (
     <section className="section" id={styles.heroSection} >
 
-      <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
+      <div className={styles.heroContentContainer}>
 
-      <div className={styles.heroGridContainer}>
-        {/* <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p> */}
-        <p className={styles.heroText} id={styles.heroSubtitle}>Inspire Inclusivity...</p>
+        <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
 
-        {heroImagesJSX}
+        <div className={styles.heroGridContainer}>
+          {/* <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p> */}
+          <p className={styles.heroText} id={styles.heroSubtitle}>Inspire Inclusivity...</p>
 
-        <p className={styles.heroText} id={styles.heroSub}>...encourage empathy.</p>
+          {heroImagesJSX}
+
+          <p className={styles.heroText} id={styles.heroSub}>...encourage empathy.</p>
+        </div>
+
+        <button className={styles.heroButton}>Get Started</button>
+
       </div>
-
-      <button className={styles.heroButton}>Get Started</button>
-
 
     </section>
   )

@@ -17,10 +17,10 @@
   align-items: center;
   justify-content: center;
 
-  width: 100vw;
+  /* width: 100vw; */
   /* height: 100vw; */
-  min-height: 100vw;
-  padding: 0px;
+  /* min-height: 100vw; */
+  /* padding: 0px; */
 
   outline: 1px solid #F39C12;
   outline-offset: -10px;
@@ -52,9 +52,9 @@
 @media only screen and (min-width: 768px) {
 
   .carouselContainer {
-    width: 50vw;
+    /* width: 50vw; */
     /* height: 50vw; */
-    min-height: 50vw;
+    /* min-height: 50vw; */
 
     outline-offset: -25px;
 

@@ -1,0 +1,84 @@
+/* General Containers */
+
+#missionSection {
+  width: 100%;
+  min-height: 100%;
+  padding-block: 2rem;
+
+  background-color: #152c46;
+}
+
+.missionContentContainer {
+  width: min(90%, 1200px);
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+/* Text */
+
+#missionTextSubsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+
+  height: 100%;
+}
+
+.missionText {
+  font-weight: 300;
+  text-align: left;
+}
+
+#missionTitle {
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+
+  color: #F39C12;
+}
+
+#missionSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.5;
+  color: white;
+}
+
+#missionCarouselContainer {
+  width: auto;
+  height: 40vh;
+  aspect-ratio:  1 / 1;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+/* General  */
+
+  #missionSection {
+    min-height: 70vh;
+  }
+
+
+  .missionContentContainer { 
+
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #missionCarouselContainer {
+    outline-offset: -10px;
+  }
+
+}
