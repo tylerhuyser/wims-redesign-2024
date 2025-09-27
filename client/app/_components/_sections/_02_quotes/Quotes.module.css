@@ -1,6 +1,6 @@
 #quotesSection {
   width: 100%;
-  min-height: 50vh;
+  min-height: 70vh;
   padding-block: 2rem;
 
   background-color: #F39C12;
@@ -26,7 +26,7 @@
   color: white;
   letter-spacing: 2px;
 
-  max-width: 60ch;
+  max-width: 75ch;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: 768px) {
   #quotesSection {
-    min-height: 50vh;
+    /* min-height: 50vh; */
     outline-offset: -25px;
   }
 

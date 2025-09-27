@@ -3,7 +3,7 @@
 #missionSection {
   width: 100%;
   min-height: 100%;
-  padding-block: 2rem;
+  padding-block: 4rem;
 
   background-color: #152c46;
 }
@@ -17,8 +17,8 @@
   align-items: center;
   justify-content: center;
 
-  row-gap: 2rem;
-  column-gap: 2rem;
+  row-gap: 4rem;
+  column-gap: 4rem;
 }
 
 /* Text */
@@ -32,10 +32,12 @@
   column-gap: 1.5rem;
   row-gap: 1rem;
 
+  max-width: 75ch;
   height: 100%;
 }
 
 .missionText {
+  /* max-width: 60ch; */
   font-weight: 300;
   text-align: left;
 }
@@ -57,12 +59,13 @@
 
 #missionCarouselContainer {
   width: auto;
-  height: 40vh;
+  height: calc(70vh - 4rem);
+  max-height: 32rem;
   aspect-ratio:  1 / 1;
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1280px) {
 
 /* General  */
 
@@ -70,15 +73,13 @@
     min-height: 70vh;
   }
 
-
   .missionContentContainer { 
-
     flex-direction: row;
     align-items: flex-start;
   }
 
   #missionCarouselContainer {
-    outline-offset: -10px;
+    outline-offset: -18px;
   }
 
 }

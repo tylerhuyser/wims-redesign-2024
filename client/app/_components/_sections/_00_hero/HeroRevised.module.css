@@ -151,15 +151,15 @@
 @media only screen and (min-width: 768px) {
   .heroGridContainer {
     row-gap: 0.5rem;
-    padding-block: 0;
+    /* padding-block: 0; */
   }
 
   #heroTitle {
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
   }
 
   .heroButton {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 }
 
