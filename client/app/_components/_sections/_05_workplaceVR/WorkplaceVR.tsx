@@ -8,11 +8,15 @@ export default function WorkplaceVR() {
   return (
     <section className="section" id={styles.workplaceVRSection}>
 
-      <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} />
+      <div className={styles.workplaceVRContentContainer}>
 
-      <div className={`subsection ${styles.workplaceVRSubsection}`} id={styles.workplaceVRTextSubsection}>
-        <p className={styles.workplaceVRText} id={styles.workplaceVRTitle}><strong className={styles.boldText}>AWOKEN VR</strong>: Immersive Empathy Training</p>
-        <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>Step into real stories. Experience bias, resilience, and belonging firsthand.</p>
+        <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} />
+
+        <div className={`subsection ${styles.workplaceVRSubsection}`} id={styles.workplaceVRTextSubsection}>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRTitle}>Immersive Empathy Training</p>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>Step into real stories. Experience bias, resilience, and belonging firsthand.</p>
+        </div>
+        
       </div>
   
     </section>
