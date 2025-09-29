@@ -3,6 +3,7 @@ import HeroRevised from "./_components/_sections/_00_hero/HeroRevised"
 // import Mission from "./_components/_sections/_01_mission/Mission"
 import Mission from "./_components/_sections/_01_mission/MissionRevised"
 import Quotes from "./_components/_sections/_02_quotes/Quotes"
+import App from "./_components/_sections/_03_app/App"
 import Platform from "./_components/_sections/_03_platform/Platform";
 import Watch from "./_components/_sections/_04_watch/Watch"
 import Panorama360 from "./_components/_sections/_panorama360/Panorama360";
@@ -16,7 +17,8 @@ export default function Home() {
       <HeroRevised />
       <Mission />
       <Quotes />
-      <Platform />
+      <App />
+      {/* <Platform /> */}
       <Watch />
       <WorkplaceVR />
       <Panorama360 />
