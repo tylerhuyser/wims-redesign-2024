@@ -1,95 +1,57 @@
 #watchSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   width: 100%;
-  /* height: auto; */
-  height: 100vw;
-  /* aspect-ratio: 16 / 9; */
-  overflow: hidden;
+  min-height: 70vh;
+  padding-block: 4rem;
 
-  /* outline: 1px solid #f39c12;
-  outline-offset: -10px; */
-
-  position: relative;
-  z-index: 1;
+  background-color: #F39C12;
 }
 
-.video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-
-  min-width: 100%;
+.watchContentContainer {
+  width: min(90%, 1200px);
   min-height: 100%;
 
-  object-fit: cover;
-}
-
-/* .watchTextContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.watchTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-bottom: 2rem;
+
+  column-gap: 1.5rem;
+  row-gap: 1rem;
 }
 
 .watchText {
-  font-family: Arial, Helvetica, sans-serif;
+  max-width: 75ch;
+
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1;
+  font-weight: 300;
   text-align: center;
+
   color: white;
 }
 
-#watchTitle {
-  font-size: 8vw;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 0.5rem;
+.videoWrapper {
+  height: auto;
+  width: 70%;
+  aspect-ratio: 16 / 9;
 }
 
-#watchSubtitle {
-  font-size: 4vw;
-  line-height: 1.5;
+.videoWrapper:hover {
+  width: 90%;
 }
 
-.italicText {
-  display: inline;
-  font-weight: 100;
-  font-style: italic;
-} */
+.video {
 
-#player {
-  max-width: none !important;
-}
-
-
-@media only screen and (min-width: 768px) {
-
-  #watchSection {
-    height: auto;
-    aspect-ratio: 16 / 9;
-    outline-offset: -50px;
-  }
-
-  .video {
-    min-height: 50vh;
-  }
-
-  #watchTitle {
-    font-size: 3.5vw;
-    margin-bottom: 1rem;
-  }
-
-  #watchCarouselTitle {
-    margin-bottom: 5px;
-  }
-  
-  #watchSubtitle {
-    font-size: 1.8vw;
-    line-height: 1.6;
-  }
-
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
