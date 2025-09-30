@@ -1,5 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
-import platformImages from "../../../content/03-platform-carousel-data.json"
+import platformImages from "../../../content/03-app-carousel-data.json"
 
 import styles from "./Platform.module.css"
 
