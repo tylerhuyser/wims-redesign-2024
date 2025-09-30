@@ -61,7 +61,7 @@
 
 .appImageContainer {
   width: auto;
-  height: calc(70vh - 4rem);
+  height: min(calc(70vh - 4rem), 90vw);
   max-height: 32rem;
   aspect-ratio:  1 / 1;
 }

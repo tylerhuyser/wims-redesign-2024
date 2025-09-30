@@ -133,8 +133,8 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
           key={item.name}
           className={
             isActive
-              ? `${styles.carouselMedia} ${styles.panoCarouselMedia}`
-              : `${styles.carouselMedia} ${styles.panoCarouselMedia} ${styles.inactive}`
+              ? `${styles.carouselMedia} ${panorama360CarouselStyles.panoCarouselMedia}`
+              : `${styles.carouselMedia} ${panorama360CarouselStyles.panoCarouselMedia} ${styles.inactive}`
           }
         >
           {isActive && (

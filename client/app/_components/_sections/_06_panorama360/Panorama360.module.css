@@ -65,3 +65,7 @@
   width: 90%;
   padding-top: 0rem;
 }
+
+.panoCarouselMedia div {
+  border-radius: 1rem;
+}
