@@ -65,20 +65,11 @@
     outline: 1px solid white;
   }
 
-  #panoCarouselContainer {
-    width: 100vw;
-    outline: none;
-  }
-
-  #panoCarouselContainer {
-    outline: none;
-  }
-
- .panoCarouselMedia {
+ /* .panoCarouselMedia {
     width: 75%;
     height: 75%;
 
     box-shadow: 10px 10px 10px rgba(243, 156, 18, 0.5); 
-  }
+  } */
 
 }

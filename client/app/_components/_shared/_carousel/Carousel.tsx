@@ -8,6 +8,7 @@ import missionCarouselStyles from "../../_sections/_01_mission/MissionRevised.mo
 import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
 import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
 import workplaceVRCarouselStyles from "../../_sections/_05_workplaceVR/WorkplaceVR.module.css"
+import panorama360CarouselStyles from "../../_sections/_06_panorama360/Panorama360.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -154,7 +155,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
     })
 
     return (
-      <div className={`${styles.carouselContainer} subsection`} id={styles.panoCarouselContainer}>
+      <div className={`${styles.carouselContainer} ${panorama360CarouselStyles.panoCarouselContainer} subsection`} id={panorama360CarouselStyles.panoCarouselContainer}>
         {carouselSlides}
       </div>
     )
