@@ -13,8 +13,10 @@ export default function WorkplaceVR() {
         <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} />
 
         <div className={`subsection ${styles.workplaceVRSubsection}`} id={styles.workplaceVRTextSubsection}>
-          <p className={styles.workplaceVRText} id={styles.workplaceVRTitle}>Immersive Empathy Training</p>
-          <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>Step into real stories. Experience bias, resilience, and belonging firsthand.</p>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRTitle}>Immersive Empathy Training for the Workplace.</p>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>Our virtual reality platform, AWOKEN VR, allows participants to see through the eyes of another and live through confrontartions with bias firsthand.</p>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>By walking in another’s shoes, participants develop a deeper understanding of those around them—regardless of culture, perspective, or identity.</p>
+          <p className={styles.workplaceVRText} id={styles.workplaceVRSubtitle}>The result? Training that doesn’t just inform, but transforms.</p>
         </div>
         
       </div>

@@ -8,7 +8,8 @@ export default function Watch() {
 
         <div className={styles.watchTextContainer}>
 
-            <p className={styles.watchText} id={styles.watchTitle}>AWOKENVR in the Workplace</p>
+          <p className={styles.watchText} id={styles.watchTitle}>Drive engagement with future media.</p>
+          <p className={styles.watchText} id={styles.watchSubtitle}>See what happens when training feels more like discovery than instruction.</p>
             
         </div>
 
