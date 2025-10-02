@@ -1,6 +1,6 @@
 #panoramaSection {
   width: 100%;
-  min-height: calc(min(90vw, 1200px)* 0.9* 9 / 16 + 8rem + 6rem + 4rem);
+  min-height: calc(min(90vw, 1200px)* 0.9* 9 / 16 + 8rem + 6rem);
   padding-block: 4rem;
 
   background-color: #F39C12;
@@ -62,10 +62,81 @@
 }
 
 #panoCarouselContainer:hover {
-  width: 90%;
+  width: 80%;
   padding-top: 0rem;
 }
 
+.panoCarouselMedia {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+  /* filter: grayscale(100%) contrast(1.5) brightness(0.9);
+  mix-blend-mode: multiply;
+  background-color: #F39C12;
+
+  position: relative; */
+}
+
+.panoCarouselMedia:hover {
+
+  /* filter: none;;
+  mix-blend-mode: revert;
+  background-color: transparent; */
+}
+
+/* .panoCarouselMedia::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+
+  width: 100%;
+  height: 100%;
+
+  outline: 1px solid white;
+  outline-offset: -10px;
+}
+
+.panoCarouselMedia:hover::before {
+  display: none;
+} */
+
+.panoCarouselMedia::after {
+  /* content: "";
+
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  inset: 0;
+
+  background: #ec7009; 
+  mix-blend-mode: screen; 
+  opacity: 0.8; 
+
+  border-radius: 1rem;
+
+  z-index: 2; */
+
+  /* opacity: 0;
+  transform: translateY(2rem);
+  animation: fadeUpPsuedo 1s ease forwards;
+  animation-delay: calc(var(--index) * 500ms); */
+}
+
+/* .panoCarouselMedia:hover::after {
+  display: none; 
+} */
+
 .panoCarouselMedia div {
   border-radius: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* .panoCarouselMedia::before {
+    outline-offset: -25px;
+  } */
+
 }

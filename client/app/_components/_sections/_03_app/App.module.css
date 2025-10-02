@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 
   column-gap: 1.5rem;
   row-gap: 1rem;
@@ -43,7 +43,7 @@
   text-align: left;
 }
 
-#appTitle {
+.appTitle {
   font-size: clamp(1.75rem, 5vw, 3.5rem);
   line-height: 1;
   font-weight: 300;
@@ -52,11 +52,15 @@
   color: #F39C12;
 }
 
-#appSubtitle {
+.appSubtitle {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   line-height: 1.5;
-  color: white;
   color: #152c46;
+}
+
+.appList {
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  line-height: 2;
 }
 
 .appImageContainer {

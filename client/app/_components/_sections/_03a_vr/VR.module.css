@@ -1,0 +1,84 @@
+/* General Containers */
+
+#vrSection {
+  width: 100%;
+  min-height: 100%;
+  padding-block: 4rem;
+
+  background-color: #152c46;
+}
+
+.vrContentContainer {
+  width: min(90%, 1200px);
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 4rem;
+  column-gap: 4rem;
+}
+
+/* Text */
+
+#vrTextSubsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+
+  max-width: 75ch;
+  height: 100%;
+}
+
+.vrText {
+  font-weight: 300;
+  text-align: left;
+}
+
+.vrTitle {
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+
+  color: #F39C12;
+}
+
+.vrSubtitle {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.5;
+  color: white;
+}
+
+/* Carousel */
+
+
+#vrCarouselContainer {
+  width: auto;
+  height: min(calc(70vh - 4rem), 90vw);
+  max-height: 32rem;
+  aspect-ratio:  1 / 1;
+}
+
+@media only screen and (min-width: 1280px) {
+
+  #vrSection {
+    min-height: 70vh;
+  }
+
+  .vrContentContainer { 
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #vrCarouselContainer {
+    outline-offset: -18px;
+  }
+
+}

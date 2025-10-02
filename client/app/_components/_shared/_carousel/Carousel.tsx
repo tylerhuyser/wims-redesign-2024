@@ -9,6 +9,7 @@ import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
 import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
 import workplaceVRCarouselStyles from "../../_sections/_05_workplaceVR/WorkplaceVR.module.css"
 import panorama360CarouselStyles from "../../_sections/_06_panorama360/Panorama360.module.css"
+import communityVRCarouselStyles from "../../_sections/_07_communityVR/CommunityVR.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -54,6 +55,7 @@ type ImageCarouselProps = {
     | 'platformCarousel'
     | 'workplaceVRCarousel'
     | 'panorama360'
+    | 'communityVRCarousel'
   data: ImageCarouselItem[]
 }
 
@@ -84,24 +86,29 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   }, [carouselCount, carouselType, data.length])
 
 
-  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel") {
+  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel" || carouselType === "communityVRCarousel") {
     const isHero = carouselType === 'heroCarousel'
     const isMission = carouselType === 'missionCarousel'
     const isPlatform = carouselType === 'platformCarousel'
+    const isWorkplaceVR = carouselType === 'workplaceVRCarousel'
     const containerClass = isHero
       ? heroCarouselStyles.heroCarouselContainer
       : isMission
         ? missionCarouselStyles.missionCarouselContainer
         : isPlatform
           ? platformCarouselStyles.platformCarouselContainer
-          : workplaceVRCarouselStyles.workplaceVRCarouselContainer
+          : isWorkplaceVR
+            ? workplaceVRCarouselStyles.workplaceVRCarouselContainer
+            : communityVRCarouselStyles.communityVRCarouselContainer
     const mediaClass = isHero
       ? heroCarouselStyles.heroCarouselMedia
       : isMission
         ? missionCarouselStyles.missionCarouselMedia
         : isPlatform
           ? platformCarouselStyles.platformCarouselMedia
-          : workplaceVRCarouselStyles.workplaceVRCarouselMedia
+          : isWorkplaceVR
+            ? workplaceVRCarouselStyles.workplaceVRCarouselMedia
+            : communityVRCarouselStyles.communityVRCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
       <img

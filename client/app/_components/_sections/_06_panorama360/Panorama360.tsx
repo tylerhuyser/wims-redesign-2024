@@ -13,8 +13,8 @@ export default function Panorama360() {
 
         <div className={styles.panoramaTextContainer}>
 
-          <p className={styles.panoramaText} id={styles.panoramaTitle}>Restoring the human element.</p>
-          <p className={styles.panoramaText} id={styles.panoramaSubtitle}>Human-centeric storytelling is the core of our award-winning VR platform.</p>
+          <p className={styles.panoramaText} id={styles.panoramaTitle}>Stories you can literally step into.</p>
+          <p className={styles.panoramaText} id={styles.panoramaSubtitle}>Explore our award-winning virtual reality platform.</p>
           
         </div>
           
