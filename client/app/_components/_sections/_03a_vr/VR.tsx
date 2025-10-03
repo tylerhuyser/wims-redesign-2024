@@ -14,9 +14,10 @@ export default function VR() {
 
         <div className={`subsection ${styles.vrSubsection}`} id={styles.vrTextSubsection}>
           <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR</p>
-          <p className={`${styles.vrText} ${styles.vrTitle}`}>Our perspectives shift when we step inside another person's shoes.</p>
-          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR is a virtual reality platform that lets us see through the eyes of another. By living through another's experiences firsthand, the concept of bias becomes human.</p>
-          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>Where Awoken App builds daily practice, AWOKEN VR inspires engagement and a willingness to commit to change.</p>
+          <p className={`${styles.vrText} ${styles.vrTitle}`}>We expand our perspective when we step into another person's shoes.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR is an immersive, perspective-taking platform that makes the impact of bias tangible—and unforgettable.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>By seeing through the eyes of another, participants not only understand bias more deeply but also become more committed to pick up the practice of addressing it.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>Where Awoken App builds daily practice, AWOKEN VR sparks awareness and inspires lasting engagement with change.</p>
         </div>
         
       </div>

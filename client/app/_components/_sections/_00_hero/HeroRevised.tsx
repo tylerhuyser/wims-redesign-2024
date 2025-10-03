@@ -27,11 +27,11 @@ export default function HeroRevised() {
 
         <div className={styles.heroGridContainer}>
           {/* <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p> */}
-          <p className={styles.heroText} id={styles.heroSubtitle}>Inspire Inclusivity...</p>
+          <p className={styles.heroText} id={styles.heroSubtitle}>Recognize our biases...</p>
 
           {heroImagesJSX}
 
-          <p className={styles.heroText} id={styles.heroSub}>...encourage empathy.</p>
+          <p className={styles.heroText} id={styles.heroSub}>...to begin training</p>
         </div>
 
         <button className={styles.heroButton}>Get Started</button>

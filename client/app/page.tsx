@@ -1,5 +1,6 @@
 // import Hero from "./_components/_sections/_00_hero/Hero"
 import HeroRevised from "./_components/_sections/_00_hero/HeroRevised"
+import Hero3 from "./_components/_sections/_00_hero/Hero3"
 // import Mission from "./_components/_sections/_01_mission/Mission"
 import Mission from "./_components/_sections/_01_mission/MissionRevised"
 import Quotes from "./_components/_sections/_02_quotes/Quotes"
@@ -16,7 +17,8 @@ export default function Home() {
   return (
     <>
       {/* <Hero /> */}
-      <HeroRevised />
+      {/* <HeroRevised /> */}
+      <Hero3 />
       <Mission />
       {/* <Quotes /> */}
       <App />
