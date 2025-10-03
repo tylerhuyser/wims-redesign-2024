@@ -14,10 +14,10 @@ export default function WorkplaceVR() {
 
         <div className={`subsection ${styles.workplaceVRSubsection}`} id={styles.workplaceVRTextSubsection}>
           <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>IN THE WORKPLACE</p>
-          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRTitle}`}>Empathy training that works in the workplace.</p>
-          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>Our virtual reality platform, AWOKEN VR, allows participants to see through the eyes of another and live through confrontartions with bias firsthand.</p>
-          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>By walking in another’s shoes, participants develop a deeper understanding of those around them—regardless of culture, perspective, or identity.</p>
-          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>The result? Training that doesn’t just inform, but transforms.</p>
+          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRTitle}`}>Bias is more than a concept. Make it human.</p>
+          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>Traditional workplace program discuss the experience of bias in the abstract. Awoken makes them tangible, human, and real. Through immersive VR, participants don't just study bias—they experience it.</p>
+          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>Ultimately, Awoken makes workplace programs more memorable, engaging, and more likely to spark long-term change with follow-on programs, such as Awoken App.</p>
+          <p className={` ${styles.workplaceVRText} ${styles.workplaceVRSubtitle}`}>Awoken is modular, scalable, and designed to integrate seamlessly with existing programs to meet the unique needs of organizations of every size.</p>
         </div>
         
       </div>

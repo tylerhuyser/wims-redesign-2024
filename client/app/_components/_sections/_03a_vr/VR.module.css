@@ -56,15 +56,44 @@
   color: white;
 }
 
+.vrList {
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+  line-height: 2;
+}
+
 /* Carousel */
 
 
-#vrCarouselContainer {
+/* #vrCarouselContainer {
   width: auto;
   height: min(calc(70vh - 4rem), 90vw);
   max-height: 32rem;
   aspect-ratio:  1 / 1;
+} */
+
+/* Video */
+
+.videoWrapper {
+  width: auto;
+  height: min(calc(70vh - 4rem), 90vw);
+  max-height: 32rem;
+  aspect-ratio:  1 / 1;
+
+  outline: 1px solid #F39C12;
+  outline-offset: -25px;
 }
+
+.videoWrapper:hover {
+  outline: 1px solid white;
+}
+
+.video {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 
 @media only screen and (min-width: 1280px) {
 
@@ -78,7 +107,7 @@
   }
 
   #vrCarouselContainer {
-    outline-offset: -18px;
+    outline-offset: -25px;
   }
 
 }

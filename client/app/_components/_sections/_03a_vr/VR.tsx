@@ -10,14 +10,26 @@ export default function VR() {
 
       <div className={styles.vrContentContainer}>
 
-        <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} />
+        {/* <Carousel carouselType="workplaceVRCarousel" data={workplaceVRImages} /> */}
+
+        <div className={styles.videoWrapper}>
+            
+            <video className={styles.video} autoPlay muted loop>
+              <source src="/videos/awoken-vr-video.mp4" type="video/mp4" />
+        </video>
+              
+          </div>  
 
         <div className={`subsection ${styles.vrSubsection}`} id={styles.vrTextSubsection}>
           <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR</p>
-          <p className={`${styles.vrText} ${styles.vrTitle}`}>We expand our perspective when we step into another person's shoes.</p>
-          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR is an immersive, perspective-taking platform that makes the impact of bias tangible—and unforgettable.</p>
-          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>By seeing through the eyes of another, participants not only understand bias more deeply but also become more committed to pick up the practice of addressing it.</p>
-          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>Where Awoken App builds daily practice, AWOKEN VR sparks awareness and inspires lasting engagement with change.</p>
+          <p className={`${styles.vrText} ${styles.vrTitle}`}>Our perspective is limited. Expand perspective with virtual reality.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>Awoken VR is an immersive platform that lets participants take the perspective of another.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle}`}>By walking in someone else's shoes, participants:.</p>
+          <p className={`${styles.vrText} ${styles.vrSubtitle} ${styles.vrList}`}>
+          • Better connect with the concept of bias.<br />
+          • Build greater empathy toward their colleagues & community.<br />
+          • Gain a deeper sense of belonging in their community or organization<br />
+          </p>
         </div>
         
       </div>

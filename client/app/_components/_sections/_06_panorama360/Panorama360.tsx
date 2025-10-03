@@ -14,7 +14,7 @@ export default function Panorama360() {
         <div className={styles.panoramaTextContainer}>
 
           <p className={styles.panoramaText} id={styles.panoramaTitle}>Stories you can literally step into.</p>
-          <p className={styles.panoramaText} id={styles.panoramaSubtitle}>Explore our award-winning virtual reality platform.</p>
+          <p className={styles.panoramaText} id={styles.panoramaSubtitle}>Explore 360° scenes from our award-winning VR platform.</p>
           
         </div>
           

@@ -14,7 +14,7 @@ export default function Mission() {
         <div className={`subsection ${styles.missionSubsection}`} id={styles.missionTextSubsection}>
         <p className={`${styles.missionText} ${styles.missionSubtitle}`}>OUR MISSION</p>
           <p className={`${styles.missionText} ${styles.missionTitle}`}>We aim to strengthen schools, teams, and communities.</p>
-          <p className={`${styles.missionText} ${styles.missionSubtitle}`}>We use proven psychology, immersive technologies, captivating stories, to humanize bias, expand perspectives, and drive meaningful change.</p>
+          <p className={`${styles.missionText} ${styles.missionSubtitle}`}>We use immersive technologies, captivating stories, and proven psychology to humanize bias, expand perspectives, and drive meaningful change.</p>
           <p className={`${styles.missionText} ${styles.missionSubtitle}`}>Our goal is to build spaces where everyone has the chance to flourish, succeed, and belong.</p>
         </div>
       
