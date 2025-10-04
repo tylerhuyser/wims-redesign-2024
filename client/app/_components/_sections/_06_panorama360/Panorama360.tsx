@@ -1,4 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
+import PanoramaCarousel from "../../_shared/_carousel/PanoramaCarousel"
 import panorama360Images from '../../../content/06-panorama-360-carousel-data.json'
 
 import styles from "./Panorama360.module.css"
@@ -18,7 +19,8 @@ export default function Panorama360() {
           
         </div>
           
-        <Carousel carouselType="panorama360" data={panorama360Images} />
+        {/* <Carousel carouselType="panorama360" data={panorama360Images} /> */}
+        <PanoramaCarousel data={panorama360Images} />
 
       </div>
 

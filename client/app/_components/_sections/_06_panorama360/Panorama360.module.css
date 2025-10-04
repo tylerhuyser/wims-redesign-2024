@@ -1,5 +1,6 @@
 #panoramaSection {
   width: 100%;
+
   min-height: calc(min(90vw, 1200px)* 0.9* 9 / 16 + 8rem + 6rem);
   padding-block: 4rem;
 
@@ -9,16 +10,19 @@
 }
 
 .panoramaContentContainer {
-  width: min(90%, 1200px);
-  min-height: 100%;
+  width: 100%;  
+  height: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
 }
 
 .panoramaTextContainer {
+  width: min(90%, 1200px);
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -52,91 +56,87 @@
   line-height: 1.5;
 }
 
-#panoCarouselContainer {
-  height: auto;
-  width: 70%;
-  aspect-ratio: 16 / 9;
-  padding-top: 2rem;
+.panoCarouselContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 
-  outline: none;
+  width: min(100%, 1200px);
+  height: 50vh;
+  padding-block: 2rem;
+
+
+  position: relative;
+  overflow: hidden;
 }
 
-#panoCarouselContainer:hover {
-  width: 80%;
-  padding-top: 0rem;
+.panoCarouselSliderContainer {
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  width: calc(100%);
+  height: 100%;
+
+  /* NEW */
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.panoCarouselButton {
+  background: none;
+  border: none;
+
+  width: 4rem;
+  height: calc(80% - 3rem);
+  padding: 1rem;
+
+  color: white;
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.leftArrow {
+  left: 0;
+  background: linear-gradient(to right, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0));
+}
+
+.rightArrow {
+  right: 0;
+  background: linear-gradient(to left, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0));
+}
+
+.leftArrow:hover {
+  background: linear-gradient(to right, rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 0));
+}
+
+.rightArrow:hover {
+  background: linear-gradient(to left, rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 0));
 }
 
 .panoCarouselMedia {
-  border-radius: 1rem;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 
-  /* filter: grayscale(100%) contrast(1.5) brightness(0.9);
-  mix-blend-mode: multiply;
-  background-color: #F39C12;
-
-  position: relative; */
-}
-
-.panoCarouselMedia:hover {
-
-  /* filter: none;;
-  mix-blend-mode: revert;
-  background-color: transparent; */
-}
-
-/* .panoCarouselMedia::before {
-  content: "";
-  display: inline-block;
   position: absolute;
-  z-index: 3;
-
-  width: 100%;
-  height: 100%;
-
-  outline: 1px solid white;
-  outline-offset: -10px;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 80%;
+  transform: translate(50%, 50%); /* base centering */
+  transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.3s ease;
 }
-
-.panoCarouselMedia:hover::before {
-  display: none;
-} */
-
-.panoCarouselMedia::after {
-  /* content: "";
-
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-  inset: 0;
-
-  background: #ec7009; 
-  mix-blend-mode: screen; 
-  opacity: 0.8; 
-
-  border-radius: 1rem;
-
-  z-index: 2; */
-
-  /* opacity: 0;
-  transform: translateY(2rem);
-  animation: fadeUpPsuedo 1s ease forwards;
-  animation-delay: calc(var(--index) * 500ms); */
-}
-
-/* .panoCarouselMedia:hover::after {
-  display: none; 
-} */
 
 .panoCarouselMedia div {
   border-radius: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
 
-  /* .panoCarouselMedia::before {
-    outline-offset: -25px;
-  } */
-
-}
