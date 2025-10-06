@@ -4,12 +4,10 @@ import React, { useState, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
 import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
-import missionCarouselStyles from "../../_sections/_01_mission/MissionRevised.module.css"
+import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
-import platformCarouselStyles from "../../_sections/_03_platform/Platform.module.css"
-import workplaceVRCarouselStyles from "../../_sections/_05_workplaceVR/WorkplaceVR.module.css"
-import panorama360CarouselStyles from "../../_sections/_06_panorama360/Panorama360.module.css"
-import communityVRCarouselStyles from "../../_sections/_07_communityVR/CommunityVR.module.css"
+import workplaceCarouselStyles from "../../_sections/_05_workplace/Workplace.module.css"
+import communityCarouselStyles from "../../_sections/_07_community/Community.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
@@ -52,10 +50,8 @@ type ImageCarouselProps = {
   carouselType:
     | 'heroCarousel'
     | 'missionCarousel'
-    | 'platformCarousel'
-    | 'workplaceVRCarousel'
-    | 'panorama360'
-    | 'communityVRCarousel'
+    | 'workplaceCarousel'
+    | 'communityCarousel'
   data: ImageCarouselItem[]
 }
 
@@ -73,7 +69,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   const [carouselCount, setCarouselCount] = useState(0)
 
   useEffect(() => {
-    const delay = carouselType === "missionCarousel" || carouselType === "panorama360"
+    const delay = carouselType === "missionCarousel"
       ? 25000
       : 5000
     const timer = setTimeout(() => {
@@ -86,29 +82,24 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   }, [carouselCount, carouselType, data.length])
 
 
-  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "platformCarousel" || carouselType === "workplaceVRCarousel" || carouselType === "communityVRCarousel") {
+  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "workplaceCarousel" || carouselType === "communityCarousel") {
     const isHero = carouselType === 'heroCarousel'
     const isMission = carouselType === 'missionCarousel'
-    const isPlatform = carouselType === 'platformCarousel'
-    const isWorkplaceVR = carouselType === 'workplaceVRCarousel'
+    const isWorkplaceVR = carouselType === 'workplaceCarousel'
     const containerClass = isHero
       ? heroCarouselStyles.heroCarouselContainer
       : isMission
         ? missionCarouselStyles.missionCarouselContainer
-        : isPlatform
-          ? platformCarouselStyles.platformCarouselContainer
           : isWorkplaceVR
-            ? workplaceVRCarouselStyles.workplaceVRCarouselContainer
-            : communityVRCarouselStyles.communityVRCarouselContainer
+            ? workplaceCarouselStyles.workplaceCarouselContainer
+            : communityCarouselStyles.communityCarouselContainer
     const mediaClass = isHero
       ? heroCarouselStyles.heroCarouselMedia
       : isMission
         ? missionCarouselStyles.missionCarouselMedia
-        : isPlatform
-          ? platformCarouselStyles.platformCarouselMedia
           : isWorkplaceVR
-            ? workplaceVRCarouselStyles.workplaceVRCarouselMedia
-            : communityVRCarouselStyles.communityVRCarouselMedia
+            ? workplaceCarouselStyles.workplaceCarouselMedia
+            : communityCarouselStyles.communityCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
       <img
@@ -125,44 +116,6 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
 
     return (
       <div className={`${styles.carouselContainer} ${containerClass} subsection`} id={containerClass}>
-        {carouselSlides}
-      </div>
-    )
-  }
-
-
-  if (carouselType === 'panorama360') {
-    const carouselSlides = data.map((item, index) => {
-      const isActive = index === carouselCount
-
-      return (
-        <div
-          key={item.name}
-          className={
-            isActive
-              ? `${styles.carouselMedia} ${panorama360CarouselStyles.panoCarouselMedia}`
-              : `${styles.carouselMedia} ${panorama360CarouselStyles.panoCarouselMedia} ${styles.inactive}`
-          }
-        >
-          {isActive && (
-            <PanoramaViewer
-              key={item.name}
-              imagePath={item.path}
-              width="100%"
-              height="100%"
-              pitch={0}
-              yaw={0}
-              hfov={110}
-              autoLoad
-              showZoomCtrl={false}
-            />
-          )}
-        </div>
-      )
-    })
-
-    return (
-      <div className={`${styles.carouselContainer} ${panorama360CarouselStyles.panoCarouselContainer} subsection`} id={panorama360CarouselStyles.panoCarouselContainer}>
         {carouselSlides}
       </div>
     )

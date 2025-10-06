@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic'
 
-import styles from "../../_sections/_06_panorama360/Panorama360.module.css"
+import styles from "../../_sections/_04_panorama360/Panorama360.module.css"
 
 // Define props for the PanoramaViewer
 type PanoramaViewerProps = {
