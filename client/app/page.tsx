@@ -8,7 +8,7 @@ import Heartbeat from "./_components/_sections/_06_heartbeat/Heartbeat"
 import Community from "./_components/_sections/_07_community/Community"
 import Outpost from "./_components/_sections/_08_outpost/Outpost"
 import Contact from "./_components/_sections/_09_contact/Contact"
-import Quotes from "./_components/_sections/_02_quotes/Quotes"
+import Quotes from "./_components/_sections/_10_quotes/Quotes"
 
 
 export default function Home() {
