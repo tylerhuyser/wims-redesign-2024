@@ -48,7 +48,7 @@ section, .section {
   /* width: 100vw; */
 }
 
-.contentContainer {
+.animationContainer {
   display: flex;
   justify-content: center;
   align-items: center;

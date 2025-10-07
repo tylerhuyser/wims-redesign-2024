@@ -11,7 +11,7 @@ interface FadeUpSectionProps {
 export default function FadeUpSection({ children, delay = 0 }: FadeUpSectionProps) {
   return (
     <motion.div
-      className="contentContainer"
+      className="animationContainer"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 2, ease: 'easeOut', delay }}
