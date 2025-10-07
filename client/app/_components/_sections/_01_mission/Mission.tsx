@@ -1,25 +1,28 @@
 import Carousel from '../../_shared/_carousel/Carousel'
 import missionGifs from "../../../content/01-mission-carousel-data.json"
 
+import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from './Mission.module.css'
 
 export default function Mission() {
   return (
     <section className={`section ${styles.missionSection}`} id="mission">
 
-      <div className={styles.missionContentContainer}>
+      <FadeUp>
+        <div className={styles.missionContentContainer}>
 
-        <Carousel carouselType="missionCarousel" data={missionGifs} />
+          <Carousel carouselType="missionCarousel" data={missionGifs} />
 
-        <div className={`subsection ${styles.missionSubsection}`} id={styles.missionTextSubsection}>
-        <p className={`${styles.missionText} ${styles.missionSubtitle}`}>OUR MISSION</p>
-          <p className={`${styles.missionText} ${styles.missionTitle}`}>We aim to strengthen schools, teams, and communities.</p>
-          <p className={`${styles.missionText} ${styles.missionSubtitle}`}>We use immersive technologies, captivating stories, and proven psychology to humanize bias, expand perspectives, and drive meaningful change.</p>
-          <p className={`${styles.missionText} ${styles.missionSubtitle}`}>Our goal is to build spaces where everyone has the chance to flourish, succeed, and belong.</p>
-        </div>
-      
-      </div>
+          <div className={`subsection ${styles.missionSubsection}`} id={styles.missionTextSubsection}>
+          <p className={`${styles.missionText} ${styles.missionSubtitle}`}>OUR MISSION</p>
+            <p className={`${styles.missionText} ${styles.missionTitle}`}>We aim to strengthen schools, teams, and communities.</p>
+            <p className={`${styles.missionText} ${styles.missionSubtitle}`}>We use immersive technologies, captivating stories, and proven psychology to humanize bias, expand perspectives, and drive meaningful change.</p>
+            <p className={`${styles.missionText} ${styles.missionSubtitle}`}>Our goal is to build spaces where everyone has the chance to flourish, succeed, and belong.</p>
+          </div>
         
+        </div>
+      </FadeUp>
+
     </section>
   );
 }
