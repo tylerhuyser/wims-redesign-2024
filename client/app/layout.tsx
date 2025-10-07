@@ -9,7 +9,6 @@ const lato = Lato({
 
 import Nav from "./_components/_shared/_nav/Nav";
 import Footer from './_components/_shared/_footer/Footer'
-import Social from './_components/_shared/_social/Social'
 import { SEO } from "./_components/_shared/_seo/SEO";
 // import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
@@ -42,8 +41,6 @@ export default function RootLayout({
           </main>
 
           <Footer />
-
-          {/* <Social /> */}
           
         </div>
       </body>

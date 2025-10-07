@@ -41,9 +41,6 @@
     height: calc(100px - 20px);
   }
 
-  .navLogoContainer {
-  }
-
   .navLogoContainer svg {
     transform: scale(1);
   }

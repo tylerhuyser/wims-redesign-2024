@@ -61,16 +61,6 @@
   line-height: 2;
 }
 
-/* Carousel */
-
-
-/* #vrCarouselContainer {
-  width: auto;
-  height: min(calc(70vh - 4rem), 90vw);
-  max-height: 32rem;
-  aspect-ratio:  1 / 1;
-} */
-
 /* Video */
 
 .videoWrapper {

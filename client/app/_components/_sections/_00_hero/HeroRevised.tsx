@@ -26,7 +26,6 @@ export default function HeroRevised() {
         <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
 
         <div className={styles.heroGridContainer}>
-          {/* <p className={styles.heroText} id={styles.heroTitle}>A<span className={styles.boldText}>WOKE</span>N</p> */}
           <p className={styles.heroText} id={styles.heroSubtitle}>Recognize our biases...</p>
 
           {heroImagesJSX}

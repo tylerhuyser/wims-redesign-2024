@@ -25,7 +25,6 @@ export default function Hero3() {
 
         <div className={styles.heroTextContainer}>
           <p className={styles.heroText} id={styles.heroSubtitle}>WELCOME TO A<span className={styles.boldText}>WOKE</span>N</p>
-          {/* <p className={styles.heroText} id={styles.heroTitle}>Make the unconscious conscious. Make empathy a practice.</p> */}
           <p className={styles.heroText} id={styles.heroTitle}>Make the unconscious conscious.</p>
           <p className={styles.heroText} id={styles.heroTitle}>Make empathy a practice.</p>
           <p className={styles.heroText} id={styles.heroBody}>

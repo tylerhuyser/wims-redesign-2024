@@ -1,39 +1,11 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import dynamic from 'next/dynamic'
 import styles from './Carousel.module.css'
-import heroCarouselStyles from "../../_sections/_00_hero/Hero.module.css"
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
 import workplaceCarouselStyles from "../../_sections/_05_workplace/Workplace.module.css"
 import communityCarouselStyles from "../../_sections/_07_community/Community.module.css"
-
-// Define props for the PanoramaViewer
-type PanoramaViewerProps = {
-  imagePath: string
-  width?: string
-  height?: string
-  pitch?: number
-  yaw?: number
-  hfov?: number
-  autoLoad?: boolean
-  showZoomCtrl?: boolean
-}
-
-// Dynamic import of PanoramaViewer with SSR disabled
-const PanoramaViewer = dynamic(
-  () =>
-    import('@/app/_lib/PannellumClient').then(
-      mod => mod.PanoramaViewer as React.ComponentType<PanoramaViewerProps>
-    ),
-  { ssr: false }
-)
-
-// type CarouselItem = {
-//   path: string
-//   name: string
-// }
 
 type ImageCarouselItem = {
   path: string
@@ -48,7 +20,6 @@ type QuoteCarouselItem = {
 // Image-based carousels
 type ImageCarouselProps = {
   carouselType:
-    | 'heroCarousel'
     | 'missionCarousel'
     | 'workplaceCarousel'
     | 'communityCarousel'
@@ -82,20 +53,16 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   }, [carouselCount, carouselType, data.length])
 
 
-  if (carouselType === "heroCarousel" || carouselType === "missionCarousel" || carouselType === "workplaceCarousel" || carouselType === "communityCarousel") {
-    const isHero = carouselType === 'heroCarousel'
+  if (carouselType === "missionCarousel" || carouselType === "workplaceCarousel" || carouselType === "communityCarousel") {
+
     const isMission = carouselType === 'missionCarousel'
     const isWorkplaceVR = carouselType === 'workplaceCarousel'
-    const containerClass = isHero
-      ? heroCarouselStyles.heroCarouselContainer
-      : isMission
+    const containerClass = isMission
         ? missionCarouselStyles.missionCarouselContainer
           : isWorkplaceVR
             ? workplaceCarouselStyles.workplaceCarouselContainer
             : communityCarouselStyles.communityCarouselContainer
-    const mediaClass = isHero
-      ? heroCarouselStyles.heroCarouselMedia
-      : isMission
+    const mediaClass = isMission
         ? missionCarouselStyles.missionCarouselMedia
           : isWorkplaceVR
             ? workplaceCarouselStyles.workplaceCarouselMedia

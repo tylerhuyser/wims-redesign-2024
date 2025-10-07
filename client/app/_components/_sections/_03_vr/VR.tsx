@@ -20,11 +20,6 @@ export default function VR() {
           <p className={`${styles.vrText} ${styles.vrTitle}`}>Our perspective is limited. Expand perspective with virtual reality.</p>
           <p className={`${styles.vrText} ${styles.vrSubtitle}`}>Awoken VR is an immersive platform that lets participants take the perspective of another.</p>
           <p className={`${styles.vrText} ${styles.vrSubtitle}`}>By walking in someone else's shoes, participants better connect with the concept of bias, build greater empathy toward their colleagues & community, and gain a deeper sense of belonging in their community or organization.</p>
-          {/* <p className={`${styles.vrText} ${styles.vrSubtitle} ${styles.vrList}`}>
-          • Better connect with the concept of bias.<br />
-          • Build greater empathy toward their colleagues & community.<br />
-          • Gain a deeper sense of belonging in their community or organization.<br />
-          </p> */}
         </div>
         
       </div>

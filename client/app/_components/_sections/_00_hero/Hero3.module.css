@@ -168,22 +168,11 @@
   .heroGridContainer {
     width: 40%;
     grid-template-columns: repeat(2, 1fr);
-    /* row-gap: 0.5rem; */
-    /* padding-block: 0; */
   }
 
   .heroImageWrapper {
     width: 100%;
     height: calc((100vh - 75px - 4rem - 0.75rem) * 0.8 / 2);
-  }
-
-
-  #heroTitle {
-    /* padding-bottom: 1rem; */
-  }
-
-  .heroButton {
-    /* margin-top: 1rem; */
   }
 }
 

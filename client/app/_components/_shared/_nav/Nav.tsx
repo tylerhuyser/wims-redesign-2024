@@ -8,7 +8,6 @@ import { useWindowSize } from '@/app/hooks';
 
 import NavLinks from './NavLinks';
 import NavMenuIcons from './NavMenuIcons';
-import IconLogo from '../_logos/IconLogo';
 
 import styles from './Nav.module.css'
 
