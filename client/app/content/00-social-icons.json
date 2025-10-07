@@ -1,0 +1,32 @@
+[
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/@walkinmyshoesmedia1945",
+    "icon": "faYoutube",
+    "class": "fa-brands fa-youtube"
+  },
+  {
+    "name": "Vimeo",
+    "url": "https://vimeo.com/user95351998",
+    "icon": "faVimeo",
+    "class": "fa-brands fa-vimeo"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/walkinmyshoesmedia/?hl=en",
+    "icon": "faInstagram",
+    "class": "fa-brands fa-instagram"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/WalkInMyShoesMedia/",
+    "icon": "faFacebook",
+    "class": "fa-brands fa-facebook"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://x.com/wimsmedia",
+    "icon": "faTwitter",
+    "class": "fa-brands fa-twitter"
+  }
+]

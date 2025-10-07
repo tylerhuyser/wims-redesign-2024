@@ -1,7 +1,5 @@
 'use client'
 
-import { useRouter } from 'next/navigation';
-import Link from 'next/link'
 import styles from "./NavLinks.module.css"
 
 interface NavLinksProps {
@@ -15,8 +13,6 @@ export default function NavLinks({
   onLinkClick,
   navVisibility
 }: NavLinksProps) {
-
-  const router = useRouter();
 
   const links = [
     { name: 'MISSION', path: '#mission' },

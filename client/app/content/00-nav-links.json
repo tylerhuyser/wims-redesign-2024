@@ -1,0 +1,8 @@
+[
+  { "name": "MISSION", "path": "#mission" },
+  { "name": "APP", "path": "#app" },
+  { "name": "VR", "path": "#vr" },
+  { "name": "WORKPLACES", "path": "#workplaces" },
+  { "name": "COMMUNITIES", "path": "#communities" },
+  { "name": "CONTACT", "path": "#contact" }
+]
