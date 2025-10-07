@@ -5,7 +5,7 @@ import styles from './Mission.module.css'
 
 export default function Mission() {
   return (
-    <section className="section" id={styles.missionSection}>
+    <section className={`section ${styles.missionSection}`} id="mission">
 
       <div className={styles.missionContentContainer}>
 

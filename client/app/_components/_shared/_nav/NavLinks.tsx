@@ -1,5 +1,7 @@
-import Link from 'next/link';
+'use client'
 
+import { useRouter } from 'next/navigation';
+import Link from 'next/link'
 import styles from "./NavLinks.module.css"
 
 interface NavLinksProps {
@@ -14,11 +16,36 @@ export default function NavLinks({
   navVisibility
 }: NavLinksProps) {
 
+  const router = useRouter();
+
   const links = [
-    { name: 'HOME', path: '/', external: false },
-    { name: 'ABOUT', path: '/about', external: false },
-    { name: 'RANKINGS', path: 'https://rankings.gamesetblog.com/', external: true },
+    { name: 'MISSION', path: '#mission' },
+    { name: 'APP', path: '#app' },
+    { name: 'VR', path: '#vr' },
+    { name: 'WORKPLACES', path: '#workplaces' },
+    { name: 'COMMUNITIES', path: '#communities' },
+    { name: 'CONTACT', path: '#contact' },
   ];
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string
+  ) => {
+    e.preventDefault();
+    console.log("Clicked:", path);
+
+    const id = path.replace("#", "");
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
+    }
+
+    if (onLinkClick) onLinkClick?.();
+  };
+  
+
 
   const containerClass =
   context === "desktop"
@@ -30,27 +57,14 @@ export default function NavLinks({
     return (
       <div className={containerClass}>
         {links.map((link, index) => (
-            link.external ? (
-              <a
-                key={index}
-                className={context === "desktop" ? styles.desktopNavLink : styles.mobileNavLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={link.path}
-                onClick={context === 'mobile' && onLinkClick ? onLinkClick : undefined}
-              >
-                {link.name}
-              </a>
-            ) : (
-              <Link
-                key={index}
-                className={context === "desktop" ? styles.desktopNavLink : styles.mobileNavLink}
-                href={link.path}
-                onClick={context === 'mobile' && onLinkClick ? onLinkClick : undefined}
-              >
-                {link.name}
-              </Link>
-            )
+          <a
+            key={index}
+            href={link.path}
+            className={context === 'desktop' ? styles.desktopNavLink : styles.mobileNavLink}
+            onClick={(e) => handleClick(e, link.path)}
+          >
+            {link.name}
+          </a>
         ))}
       </div>
     );

@@ -2,7 +2,7 @@ import styles from './App.module.css'
 
 export default function App() {
   return (
-    <section className="section" id={styles.appSection}>
+    <section className={`section ${styles.appSection}`} id="app">
 
       <div className={styles.appContentContainer}>
 

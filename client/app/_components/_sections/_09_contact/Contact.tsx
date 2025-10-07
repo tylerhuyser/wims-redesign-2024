@@ -2,7 +2,7 @@ import styles from "./Contact.module.css"
 
 export default function Contact() {
   return (
-    <section className="section" id={styles.contactSection}>
+    <section className={`section ${styles.contactSection}`} id="contact">
 
       <div className={styles.contactContentContainer}>
 

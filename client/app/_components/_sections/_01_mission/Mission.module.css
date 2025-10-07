@@ -1,6 +1,6 @@
 /* General Containers */
 
-#missionSection {
+.missionSection {
   width: 100%;
   min-height: 100%;
   padding-block: 4rem;
@@ -69,7 +69,7 @@
 
 /* General  */
 
-  #missionSection {
+  .missionSection {
     min-height: 70vh;
   }
 

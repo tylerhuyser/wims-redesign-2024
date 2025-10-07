@@ -4,7 +4,7 @@ import styles from './Community.module.css'
 
 export default function Community() {
   return (
-    <section className="section" id={styles.communitySection}>
+    <section className={`section ${styles.communitySection}`} id="communities">
 
       <div className={styles.communityContentContainer}>
 

@@ -3,7 +3,7 @@ import styles from "./VR.module.css"
 export default function VR() {
   
   return (
-    <section className="section" id={styles.vrSection}>
+    <section className={`section ${styles.vrSection}`} id="vr">
 
       <div className={styles.vrContentContainer}>
 

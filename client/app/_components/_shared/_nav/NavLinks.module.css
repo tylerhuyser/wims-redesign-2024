@@ -18,29 +18,26 @@
   z-index: 5;
 
   width: calc(100vw);
+  width: 100%;
   height: calc(100vh - 75px);
   overflow: hidden;
 
-  background-image: linear-gradient(rgba(54, 123, 214, 0.9), rgba(54, 123, 214, 0.25)),
-    url('https://i.imgur.com/AxblwEN.png');
-  background-size: contain;
-  background-repeat: repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-color: #F39C12;
 
-  padding: 10px 25px;
+  padding: 0.5rem 2rem;
 }
 
-.mobileNavLink {
-  font-family: helvetica;
-  font-size: 20px;
+.mobileNavLink {  
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 1.5;
+  font-weight: 300;
   color: white;
 
   text-decoration: none;
 }
 
 .mobileNavLink:not(:first-child) {
-  padding-top: 10px;
+  padding-top: 0.5rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -55,10 +52,11 @@
   }
 
   .desktopNavLink {
-    font-family: helvetica;
-    font-size: 20px;
+    font-size: clamp(0.75rem, 1.5vw, 1rem);
+    line-height: 1.5;
+    font-weight: 300;
     color: white;
-    margin: 0px 25px;
+    margin: 0 1rem;
 
     text-decoration: none;
   }

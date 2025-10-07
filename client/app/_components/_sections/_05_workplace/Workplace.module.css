@@ -1,6 +1,6 @@
 /* General Containers */
 
-#workplaceSection {
+.workplaceSection {
   width: 100%;
   min-height: 100%;
   padding-block: 4rem;
@@ -68,7 +68,7 @@
 
 @media only screen and (min-width: 1280px) {
 
-  #workplaceSection {
+  .workplaceSection {
     min-height: 70vh;
   }
 

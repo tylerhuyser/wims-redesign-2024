@@ -1,6 +1,6 @@
 /* General Containers */
 
-#communitySection {
+.communitySection {
   width: 100%;
   min-height: 100%;
   padding-block: 4rem;
@@ -71,7 +71,7 @@
 
 /* General  */
 
-  #communitySection {
+  .communitySection {
     min-height: 70vh;
   }
 

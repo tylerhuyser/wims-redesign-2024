@@ -62,16 +62,16 @@ export default function Nav() {
       <div 
         className={`${styles.navContainer} ${styles.slideInTopNav}`}
         style={
-          (windowSize.width <= 758 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
+          (windowSize.width <= 768 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
             { transform: 'translateY(0px)', boxShadow: 'none', height: "calc(75px - 20px)" }
             :
-            (windowSize.width <= 758 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
+            (windowSize.width <= 768 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
               { transform: 'translateY(-75px)', boxShadow: 'none', height: "calc(75px - 20px)" }
               :
-              (windowSize.width > 758 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
+              (windowSize.width > 768 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
                 { transform: 'translateY(0px)', boxShadow: 'none', height: "calc(100px - 20px)" }
                 :   
-                (windowSize.width > 758 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
+                (windowSize.width > 768 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
                   { transform: 'translateY(-100px)', boxShadow: 'none', height: "calc(100px - 20px)" }
                   :
                   { transform: 'none' }
@@ -84,7 +84,7 @@ export default function Nav() {
             height={50}
             alt="AWOKEN Logo - White"
           />
-          <p className={styles.navLogoTitle}>AWOKEN</p>
+          <p className={styles.navLogoTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
         </Link>
 
         <NavLinks context="desktop" onLinkClick={null} navVisibility={false} />

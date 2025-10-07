@@ -1,6 +1,6 @@
 /* General Containers */
 
-#contactSection {
+.contactSection {
   width: 100%;
   min-height: 100%;
   padding-block: 4rem;
@@ -138,7 +138,7 @@
 
 /* General  */
 
-  #contactSection {
+  .contactSection {
     min-height: 70vh;
   }
 

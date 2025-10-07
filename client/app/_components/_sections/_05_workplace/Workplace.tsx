@@ -6,7 +6,7 @@ import styles from "./Workplace.module.css"
 export default function Workplace() {
   
   return (
-    <section className="section" id={styles.workplaceSection}>
+    <section className={`section ${styles.workplaceSection}`} id="workplaces">
 
       <div className={styles.workplaceContentContainer}>
 
