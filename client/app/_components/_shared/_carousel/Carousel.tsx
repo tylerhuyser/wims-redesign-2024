@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Carousel.module.css'
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
-import quotesCarouselStyles from "../../_sections/_02_quotes/Quotes.module.css"
 import workplaceCarouselStyles from "../../_sections/_05_workplace/Workplace.module.css"
 import communityCarouselStyles from "../../_sections/_07_community/Community.module.css"
+import quotesCarouselStyles from "../../_sections/_10_quotes/Quotes.module.css"
 
 type ImageCarouselItem = {
   path: string

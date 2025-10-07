@@ -25,7 +25,6 @@ export default function Footer() {
     path: string
   ) => {
     e.preventDefault();
-    console.log("Clicked:", path);
 
     const id = path.replace("#", "");
     const section = document.getElementById(id);
