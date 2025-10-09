@@ -6,7 +6,7 @@ export default function HeroRevised() {
     return (
       <div
         className={styles.heroImageWrapper}
-        style={{ ["--index" as any]: index }}
+        style={{ ['--index']: index } as React.CSSProperties}
         key={index}
       >
         <img

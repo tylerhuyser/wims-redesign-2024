@@ -6,7 +6,7 @@ export default function Hero3() {
     return (
       <div
         className={styles.heroImageWrapper}
-        style={{ ["--index" as any]: index }}
+        style={{ ['--index']: index } as React.CSSProperties}
         key={index}
       >
         <img
