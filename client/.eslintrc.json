@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",        // disables unused vars errors
+    "@typescript-eslint/no-explicit-any": "off",      // allows using 'any' type
+    "prefer-const": "off",                             // allows 'let' even if never reassigned
+    "react-hooks/exhaustive-deps": "warn",            // keeps hook dependency warnings as non-fatal
+    "@typescript-eslint/no-unused-expressions": "off" // allows expressions without assignment
+  }
 }

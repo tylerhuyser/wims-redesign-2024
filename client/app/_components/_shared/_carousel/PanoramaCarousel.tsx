@@ -49,7 +49,7 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
   }, [activeIndex])
 
   const changeIndex = (direction: "left" | "right") => { 
-    (direction === "right") ? setActiveIndex(prevState => (prevState + 1)  % data.length) : setActiveIndex(prevState => (prevState - 1  + data.length) % data.length )
+    (direction === "right") ? setActiveIndex(prevState => (prevState + 1) % data.length) : setActiveIndex(prevState => (prevState - 1 + data.length) % data.length )
   }
 
   const onClick = (direction : "left" | "right") => {
@@ -59,7 +59,7 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
   return (
     <div className={styles.panoCarouselContainer}>
 
-      <button className={`${styles.panoCarouselButton} ${styles.leftArrow}`} onClick={(e) => onClick("left")}>{String.fromCharCode(60)}</button>
+      <button className={`${styles.panoCarouselButton} ${styles.leftArrow}`} onClick={() => onClick("left")}>{String.fromCharCode(60)}</button>
 
       
       <div className={styles.panoCarouselSliderContainer}>
@@ -104,7 +104,7 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
     })}
       </div>
 
-      <button className={`${styles.panoCarouselButton} ${styles.rightArrow}`} onClick={(e) => onClick("right")}>{String.fromCharCode(62)}</button>
+      <button className={`${styles.panoCarouselButton} ${styles.rightArrow}`} onClick={() => onClick("right")}>{String.fromCharCode(62)}</button>
 
     </div>
   )

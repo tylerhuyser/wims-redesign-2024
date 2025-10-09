@@ -90,7 +90,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
   }
   
   if (carouselType === "quotes") {
-    let carouselSlides = data.map((item, index) => (
+    const carouselSlides = data.map((item, index) => (
       <p
       key={item.author}
         className={
