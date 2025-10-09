@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from "./Contact.module.css"
 
@@ -47,7 +48,7 @@ export default function Contact() {
           </div>
 
           <div className={styles.contactImageContainer}>
-            <img className={styles.contactImage} src={'/images/00-hero/hero-04.jpg'} />
+            <Image className={styles.contactImage} src={'/images/00-hero/hero-04.jpg'} alt={'contact-image'} />
           </div>
           
 

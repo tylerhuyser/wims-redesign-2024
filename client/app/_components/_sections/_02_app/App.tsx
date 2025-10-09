@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from './App.module.css'
 
@@ -22,7 +23,7 @@ export default function App() {
           </div>
 
           <div className={styles.appImageContainer}>
-            <img className={styles.appImage} src={'/images/02-app/awoken-app-mockup.png'} />
+            <Image className={styles.appImage} src={'/images/02-app/awoken-app-mockup.png'} alt='awoken-app-mockup' />
           </div>
           
         

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import heroImages from "../../../content/00-hero-data.json"
 import styles from "./Hero3.module.css"
 
@@ -9,7 +10,7 @@ export default function Hero3() {
         style={{ ['--index']: index } as React.CSSProperties}
         key={index}
       >
-        <img
+        <Image
           className={`${styles.heroImage} ${styles['heroImage' + (index + 1)]}`}
           src={imageData.path}
           alt={imageData.name || `hero-image-${index}`}

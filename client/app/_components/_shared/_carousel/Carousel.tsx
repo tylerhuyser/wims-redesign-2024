@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Image from "next/image";
 import styles from './Carousel.module.css'
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 import workplaceCarouselStyles from "../../_sections/_05_workplace/Workplace.module.css"
@@ -69,7 +70,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
             : communityCarouselStyles.communityCarouselMedia
 
     const carouselSlides = data.map((item, index) => (
-      <img
+      <Image
         key={item.name}
         src={item.path}
         alt={item.name}
