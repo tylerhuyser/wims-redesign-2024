@@ -10,7 +10,8 @@
     "postinstall": "patch-package"
   },
   "engines": {
-    "node": "20.x"
+    "node": "20.x",
+    "npm": "10.x"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
