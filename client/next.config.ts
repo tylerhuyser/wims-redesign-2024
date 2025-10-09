@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    transpilePackages: ["react-pannellum-next"],
+  },
 };
 
 export default nextConfig;
