@@ -1,27 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic'
+import { PanoramaViewer } from "@/app/_lib/PannellumClient";
 
 import styles from "../../_sections/_04_panorama360/Panorama360.module.css"
 
-// Define props for the PanoramaViewer
-type PanoramaViewerProps = {
-  imagePath: string
-  width?: string
-  height?: string
-  pitch?: number
-  yaw?: number
-  hfov?: number
-  autoLoad?: boolean
-  showZoomCtrl?: boolean
-}
-
-export const PanoramaViewer = dynamic(
-  () =>
-    import("react-pannellum-next").then((mod) => mod.Pannellum),
-  { ssr: false }
-);
 
 type PanoramaItem = {
   path: string
@@ -87,16 +70,18 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
           className={styles.panoCarouselMedia}
           style={style}
         >
-          <PanoramaViewer
-            image={item.path}
-            width="100%"
-            height="100%"
-            pitch={0}
-            yaw={0}
-            hfov={110}
-            autoLoad
-            showZoomCtrl={false}
-          />
+
+            <PanoramaViewer
+              imagePath={item.path}
+              width="100%"
+              height="100%"
+              pitch={0}
+              yaw={0}
+              hfov={110}
+              autoLoad
+              showZoomCtrl={false}
+            />
+
         </div>
       );
     })}

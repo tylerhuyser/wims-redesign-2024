@@ -63,15 +63,18 @@
 }
 
 .appImageContainer {
-  width: auto;
-  height: min(calc(70vh - 4rem), 90vw);
-  max-height: 32rem;
+  width: 100%;
+  /* height: min(calc(70vh - 4rem), 90vw); */
+  /* max-height: 32rem; */
+  max-width: 32rem;
+  height: auto;
   aspect-ratio:  1 / 1;
+  position: relative;
 }
 
 .appImage {
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   object-fit: cover;
 }
 

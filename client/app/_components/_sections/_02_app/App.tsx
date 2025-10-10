@@ -23,7 +23,12 @@ export default function App() {
           </div>
 
           <div className={styles.appImageContainer}>
-            <Image className={styles.appImage} src={'/images/02-app/awoken-app-mockup.png'} alt='awoken-app-mockup' fill />
+            <Image
+              className={styles.appImage}
+              src={'/images/02-app/awoken-app-mockup.png'}
+              alt='awoken-app-mockup'
+              fill
+              style={{ objectFit: 'cover' }} />
           </div>
           
         

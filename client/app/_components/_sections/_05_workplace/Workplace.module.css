@@ -60,10 +60,19 @@
 
 
 #workplaceCarouselContainer {
-  width: auto;
+  /* width: auto;
   height: min(calc(70vh - 4rem), 90vw);
   max-height: 32rem;
+  aspect-ratio:  1 / 1; */
+
+  width: 100%;
+  max-width: 32rem;
+  height: auto;
   aspect-ratio:  1 / 1;
+  position: relative;
+
+  outline: 1px solid #F39C12;
+  outline-offset: -10px;
 }
 
 @media only screen and (min-width: 1280px) {
