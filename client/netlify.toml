@@ -1,7 +1,8 @@
 [build]
   base    = "client"
-  publish = "client/.next"
+  publish = ".next"
   command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "20"
+
