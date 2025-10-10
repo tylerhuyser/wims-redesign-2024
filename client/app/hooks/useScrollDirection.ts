@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const SCROLL_UP: 'up' = 'up';
-const SCROLL_DOWN: 'down' = 'down';
+const SCROLL_UP = 'up' as const;
+const SCROLL_DOWN = 'down' as const;
 
 type ScrollDirection = typeof SCROLL_UP | typeof SCROLL_DOWN;
 
