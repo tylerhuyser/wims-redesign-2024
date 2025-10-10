@@ -1,5 +1,5 @@
 import Carousel from "../../_shared/_carousel/Carousel"
-import quotesData from "../../../content/02-quotes-data.json"
+import quotesData from "../../../content/10-quotes-data.json"
 
 import styles from "./Quotes.module.css"
 

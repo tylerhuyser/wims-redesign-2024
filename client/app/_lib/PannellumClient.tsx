@@ -3,6 +3,6 @@
 import dynamic from 'next/dynamic'
 
 export const PanoramaViewer = dynamic(
-  () => import('react-pannellum-next').then(mod => mod.PanoramaViewer),
+  () => import('react-pannellum-next').then(mod => mod.Pannellum),
   { ssr: false }
 )

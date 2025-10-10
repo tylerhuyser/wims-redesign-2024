@@ -17,13 +17,11 @@ type PanoramaViewerProps = {
   showZoomCtrl?: boolean
 }
 
-const PanoramaViewer = dynamic(
+export const PanoramaViewer = dynamic(
   () =>
-    import('@/app/_lib/PannellumClient').then(
-      mod => mod.PanoramaViewer as React.ComponentType<PanoramaViewerProps>
-    ),
+    import("react-pannellum-next").then((mod) => mod.Pannellum),
   { ssr: false }
-)
+);
 
 type PanoramaItem = {
   path: string
@@ -90,7 +88,7 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
           style={style}
         >
           <PanoramaViewer
-            imagePath={item.path}
+            image={item.path}
             width="100%"
             height="100%"
             pitch={0}
