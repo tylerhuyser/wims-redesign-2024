@@ -14,6 +14,7 @@ export default function HeroRevised() {
           className={`${styles.heroImage} ${styles['heroImage' + (index + 1)]}`}
           src={imageData.path}
           alt={imageData.name || `hero-image-${index}`}
+          fill
         />
       </div>
     )
