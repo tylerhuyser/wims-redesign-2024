@@ -1,8 +1,11 @@
-'use client'
+'use client';
 
-import dynamic from 'next/dynamic'
+import dynamic from "next/dynamic";
 
 export const PanoramaViewer = dynamic(
-  () => import('react-pannellum-next').then(mod => mod.Pannellum),
+  async () => {
+    const mod = await import('react-pannellum-next');
+    return mod.PanoramaViewer;
+  },
   { ssr: false }
-)
+);

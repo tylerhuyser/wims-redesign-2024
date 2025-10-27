@@ -1,11 +1,11 @@
 declare module 'react-pannellum-next' {
   import * as React from 'react';
 
-  export interface PannellumProps {
+  export interface PanoramaViewerProps {
     id?: string;
     width?: string;
     height?: string;
-    image: string;
+    imagePath: string;
     pitch?: number;
     yaw?: number;
     hfov?: number;
@@ -15,7 +15,7 @@ declare module 'react-pannellum-next' {
     [key: string]: any;
   }
 
-  export const Pannellum: React.FC<PannellumProps>;
+  export const PanoramaViewer: React.FC<PanoramaViewer>;
 
   export interface HotspotProps {
     pitch: number;
