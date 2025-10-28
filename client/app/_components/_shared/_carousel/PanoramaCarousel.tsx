@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
+import LazySection from "../../_shared/_lazy/LazySection";
 
 import styles from "../../_sections/_04_panorama360/Panorama360.module.css"
 
@@ -55,58 +56,61 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
   }
 
   return (
-    <div className={styles.panoCarouselContainer}>
+    <LazySection rootMargin="500px" render={(visible) =>
+      visible && (
+        <div className={styles.panoCarouselContainer}>
 
-      <button className={`${styles.panoCarouselButton} ${styles.leftArrow}`} onClick={() => onClick("left")}>{String.fromCharCode(60)}</button>
+          <button className={`${styles.panoCarouselButton} ${styles.leftArrow}`} onClick={() => onClick("left")}>{String.fromCharCode(60)}</button>
 
       
-      <div className={styles.panoCarouselSliderContainer}>
+          <div className={styles.panoCarouselSliderContainer}>
 
-      {data.map((item, index) => {
+            {data.map((item, index) => {
  
-      const offset = index - activeIndex;
+              const offset = index - activeIndex;
 
-      const normalizedOffset =
-        (offset + data.length) % data.length;
+              const normalizedOffset =
+                (offset + data.length) % data.length;
 
-        let style: React.CSSProperties = {};
+              let style: React.CSSProperties = {};
         
-        if (normalizedOffset === 0) {
-          style = { transform: "translate(-50%, -50%) translateX(0%) scale(1)", zIndex: 2};
-        } else if (normalizedOffset === 1) {
-          style = { transform: "translate(-50%, -50%) translateX(40%) scale(0.8)", zIndex: 1 };
-        } else if (normalizedOffset === data.length - 1) {
-          style = { transform: "translate(-50%, -50%) translateX(-40%) scale(0.8)", zIndex: 1 };
-        } else {
-          style = { transform: "translate(-50%, -50%) scale(0.5)", zIndex: 0 };
-        }
+              if (normalizedOffset === 0) {
+                style = { transform: "translate(-50%, -50%) translateX(0%) scale(1)", zIndex: 2 };
+              } else if (normalizedOffset === 1) {
+                style = { transform: "translate(-50%, -50%) translateX(40%) scale(0.8)", zIndex: 1 };
+              } else if (normalizedOffset === data.length - 1) {
+                style = { transform: "translate(-50%, -50%) translateX(-40%) scale(0.8)", zIndex: 1 };
+              } else {
+                style = { transform: "translate(-50%, -50%) scale(0.5)", zIndex: 0 };
+              }
 
-      return (
-        <div
-          key={item.name}
-          className={styles.panoCarouselMedia}
-          style={style}
-        >
+              return (
+                <div
+                  key={item.name}
+                  className={styles.panoCarouselMedia}
+                  style={style}
+                >
 
-            <DynamicPanoramaViewer
-              imagePath={item.path}
-              width="100%"
-              height="100%"
-              pitch={0}
-              yaw={0}
-              hfov={110}
-              autoLoad
-              showZoomCtrl={false}
-            />
+                  <DynamicPanoramaViewer
+                    imagePath={item.path}
+                    width="100%"
+                    height="100%"
+                    pitch={0}
+                    yaw={0}
+                    hfov={110}
+                    autoLoad
+                    showZoomCtrl={false}
+                  />
+
+                </div>
+              );
+            })}
+          </div>
+
+          <button className={`${styles.panoCarouselButton} ${styles.rightArrow}`} onClick={() => onClick("right")}>{String.fromCharCode(62)}</button>
 
         </div>
-      );
-    })}
-      </div>
-
-      <button className={`${styles.panoCarouselButton} ${styles.rightArrow}`} onClick={() => onClick("right")}>{String.fromCharCode(62)}</button>
-
-    </div>
+    )}/>  
   )
 }
 

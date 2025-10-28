@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from "next/image";
+import LazySection from "../../_shared/_lazy/LazySection";
+
 import styles from './Carousel.module.css'
 import missionCarouselStyles from "../../_sections/_01_mission/Mission.module.css"
 import workplaceCarouselStyles from "../../_sections/_05_workplace/Workplace.module.css"
@@ -11,6 +13,7 @@ import quotesCarouselStyles from "../../_sections/_10_quotes/Quotes.module.css"
 type ImageCarouselItem = {
   path: string
   name: string
+  blurDataURL?: string
 }
 
 type QuoteCarouselItem = {
@@ -81,21 +84,31 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
         }
         fill
         loading="lazy"
-        placeholder="blur"
+        {...(item.blurDataURL ?
+          {
+            placeholder: "blur",
+            blurDataURL: item.blurDataURL
+          }
+        :
+          {}
+        )}
       />
     ))
 
     return (
-      <div className={`${styles.carouselContainer} ${containerClass} subsection`} id={containerClass}>
-        {carouselSlides}
-      </div>
+      <LazySection render={(visible) =>
+        visible && (
+          <div className={`${styles.carouselContainer} ${containerClass} subsection`} id={containerClass}>
+            {carouselSlides}
+          </div>
+      )}/>
     )
   }
   
   if (carouselType === "quotes") {
     const carouselSlides = data.map((item, index) => (
       <p
-      key={item.author}
+        key={item.author}
         className={
           index === carouselCount
             ? `${quotesCarouselStyles.quoteText} ${quotesCarouselStyles.quoteTextContainer}`
@@ -106,14 +119,14 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
       </p>))
 
     return (
-      <div className={`${styles.carouselContainer} subsection`} id={quotesCarouselStyles.quotesCarouselContainer} >
+      <LazySection render={(visible) =>
+        visible && (
+          <div className={`${styles.carouselContainer} subsection`} id={quotesCarouselStyles.quotesCarouselContainer} >
 
-      {carouselSlides}
-      
-      </div>
+            {carouselSlides}
+        
+          </div>
+      )}/>
     )
   }
-
-  
-
 }

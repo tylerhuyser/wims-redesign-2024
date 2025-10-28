@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "generate:blur": "node scripts/generate-blur-data.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -22,9 +23,11 @@
     "@netlify/plugin-nextjs": "^5.14.4",
     "framer-motion": "^12.23.22",
     "next": "15.0.3",
+    "plaiceholder": "^3.0.0",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106",
-    "react-pannellum-next": "^1.0.4"
+    "react-pannellum-next": "^1.0.4",
+    "sharp": "^0.34.4"
   },
   "devDependencies": {
     "@types/node": "^20",

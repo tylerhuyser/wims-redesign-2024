@@ -1,22 +1,27 @@
 [
   {
     "name": "community-carousel-01",
-    "path": "/images/07-community-carousel/community-carousel-01.jpg" 
+    "path": "/images/07-community-carousel/community-carousel-01.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAM0lEQVR4nAEoANf/AOPd2/Hn4v/46QDHraabfHXMqpgAkZCURDEpkXVlAHaBhwEAAks5L/S6E9zvl608AAAAAElFTkSuQmCC"
   },
   {
     "name": "community-carousel-02",
-    "path": "/images/07-community-carousel/community-carousel-02.jpg" 
+    "path": "/images/07-community-carousel/community-carousel-02.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAMElEQVR4nGP4/+fv46tnN82fkJeWwLB62oRULwdZFgYlETEGPzN9XRlxCQYGEyVJAHLADVongQIiAAAAAElFTkSuQmCC"
   },
   {
     "name": "community-carousel-03",
-    "path": "/images/07-community-carousel/community-carousel-03.jpg" 
+    "path": "/images/07-community-carousel/community-carousel-03.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAMUlEQVR4nGM4t3dnW1Pr1///GTaVBXfmxhfVtzPsrvJ3UuJVUVJkOLOgUlZUgJeBAQCO3w+diBKT/gAAAABJRU5ErkJggg=="
   },
   {
     "name": "community-carousel-04",
-    "path": "/images/07-community-carousel/community-carousel-04.jpg" 
+    "path": "/images/07-community-carousel/community-carousel-04.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAMklEQVR4nAEnANj/AN7Bt//58MW8v9XR0gD/2sKEeHUVAABxW0YAakk6GQ8USiIKkGVAxQAR/tq6NykAAAAASUVORK5CYII="
   },
   {
     "name": "community-carousel-05",
-    "path": "/images/07-community-carousel/community-carousel-05.jpg" 
+    "path": "/images/07-community-carousel/community-carousel-05.jpg",
+    "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAMUlEQVR4nGN4d3jt/18fD61fwTAxM8TbwcrBRJOBlZnB3FiXj42BQV1FOjU1VENbDwBdswzLImEd/gAAAABJRU5ErkJggg=="
   }
 ]

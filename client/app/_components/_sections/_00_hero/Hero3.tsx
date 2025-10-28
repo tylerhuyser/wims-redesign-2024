@@ -15,6 +15,9 @@ export default function Hero3() {
           src={imageData.path}
           alt={imageData.name || `hero-image-${index}`}
           fill
+          placeholder="blur"
+          blurDataURL={imageData.blurDataURL}
+          priority={index === 0}
         />
       </div>
     )

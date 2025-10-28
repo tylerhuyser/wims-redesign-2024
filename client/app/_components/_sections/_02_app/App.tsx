@@ -1,4 +1,4 @@
-import Image from "next/image";
+import AppImage from "./AppImage"
 import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from './App.module.css'
 
@@ -15,28 +15,17 @@ export default function App() {
             <p className={`${styles.appText} ${styles.appSubtitle}`}>Through guided lessons, interactive exercises, and regular reflection, users learn to recognize bias, build empathy, and create lasting behavior change.</p>
             <p className={`${styles.appText} ${styles.appSubtitle}`}>Features include:</p>
             <p className={`${styles.appText} ${styles.appSubtitle} ${styles.appList}`}>
-            • Personalized onboarding<br />
-            • Daily micro-practices that reinforce perspective-taking<br />
-            • Progress trackers measuring growth over time<br />
-            • Scalable across organizations of different configurations<br />
+              • Personalized onboarding<br />
+              • Daily micro-practices that reinforce perspective-taking<br />
+              • Progress trackers measuring growth over time<br />
+              • Scalable across organizations of different configurations<br />
             </p>
           </div>
 
-          <div className={styles.appImageContainer}>
-            <Image
-              className={styles.appImage}
-              src={'/images/02-app/awoken-app-mockup.png'}
-              alt='awoken-app-mockup'
-              fill
-              style={{ objectFit: 'cover' }}
-              loading="lazy"
-              placeholder="blur"
-            />
-          </div>
+          <AppImage />
           
-        
         </div>
       </FadeUp>
-    </section>
+     </section>
   );
 }

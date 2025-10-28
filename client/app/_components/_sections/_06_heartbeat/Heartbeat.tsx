@@ -1,3 +1,4 @@
+import HeartbeatVideo from "./HeartbeatVideo";
 import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from "./Heartbeat.module.css"
 
@@ -13,13 +14,7 @@ export default function Heartbeat() {
             <p className={styles.heartbeatText} id={styles.heartbeatSubtitle}>Discover how programs people truly connect with boost impact and participation.</p>
           </div>
 
-          <div className={styles.videoWrapper}>
-              
-            <video className={styles.video} autoPlay muted loop>
-              <source src="/videos/06-heartbeat-video.mp4" type="video/mp4" />
-            </video>
-              
-          </div>  
+          <HeartbeatVideo /> 
           
         </div>
       </FadeUp>

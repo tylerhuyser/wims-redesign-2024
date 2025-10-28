@@ -1,3 +1,4 @@
+import VRVideo from "./VRVideo"
 import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from "./VR.module.css"
 
@@ -8,13 +9,7 @@ export default function VR() {
       <FadeUp>
         <div className={styles.vrContentContainer}>
 
-          <div className={styles.videoWrapper}>
-              
-              <video className={styles.video} autoPlay muted loop>
-                <source src="/videos/03-vr-section-video.mp4" type="video/mp4" />
-          </video>
-                
-            </div>  
+          <VRVideo />
 
           <div className={`subsection ${styles.vrSubsection}`} id={styles.vrTextSubsection}>
             <p className={`${styles.vrText} ${styles.vrSubtitle}`}>AWOKEN VR</p>
