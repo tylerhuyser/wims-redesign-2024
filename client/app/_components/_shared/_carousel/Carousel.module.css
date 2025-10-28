@@ -54,7 +54,7 @@
     animation: slide-in-left ease-in-out 0.75s;
   }
 
-  .carouselContainer:hover {
+  .carouselMedia:hover {
     outline: 1px solid white;
   }
 

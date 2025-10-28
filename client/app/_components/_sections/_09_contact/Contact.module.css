@@ -165,4 +165,8 @@
     outline-offset: -18px;
   }
 
+  .contactImage:hover {
+    outline: 1px solid white;
+  }
+
 }

@@ -76,9 +76,6 @@
   /* height: 100%;
   width: 100%; */
   object-fit: cover;
-
-  outline: 1px solid #F39C12;
-  outline-offset: -25px;
 }
 
 
@@ -93,10 +90,6 @@
   .appContentContainer { 
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  .appImage {
-    outline-offset: -18px;
   }
 
 }

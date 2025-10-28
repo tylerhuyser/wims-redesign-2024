@@ -1,3 +1,4 @@
+import HeroButton from "./HeroButton";
 import Image from "next/image";
 import heroImages from "../../../content/00-hero-data.json"
 import styles from "./Hero3.module.css"
@@ -35,7 +36,7 @@ export default function Hero3() {
           <p className={styles.heroText} id={styles.heroBody}>
             Our platforms, <span className={styles.boldText}>Awoken App</span> and <span className={styles.boldText}>Awoken VR</span>, help individuals, organizations, and communities grow together.
           </p>
-          <button className={styles.heroButton}>Get Started</button>
+          <HeroButton />
         </div>
 
 
