@@ -15,6 +15,7 @@ export default function Hero3() {
           src={imageData.path}
           alt={imageData.name || `hero-image-${index}`}
           fill
+          unoptimized
         />
       </div>
     )

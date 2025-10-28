@@ -82,6 +82,7 @@ export default function Nav() {
             width={50}
             height={50}
             alt="AWOKEN Logo - White"
+            unoptimized
           />
           <p className={styles.navLogoTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
         </Link>

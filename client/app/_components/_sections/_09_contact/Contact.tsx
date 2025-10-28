@@ -48,7 +48,13 @@ export default function Contact() {
           </div>
 
           <div className={styles.contactImageContainer}>
-            <Image className={styles.contactImage} src={'/images/00-hero/hero-04.jpg'} alt={'contact-image'} fill />
+            <Image
+              className={styles.contactImage}
+              src={'/images/00-hero/hero-04.jpg'}
+              alt={'contact-image'}
+              fill
+              unoptimized
+            />
           </div>
           
 

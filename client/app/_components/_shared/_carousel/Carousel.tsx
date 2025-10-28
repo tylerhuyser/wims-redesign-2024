@@ -80,6 +80,7 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
             : `${styles.carouselMedia} ${mediaClass} ${styles.inactive}`
         }
         fill
+        unoptimized
       />
     ))
 

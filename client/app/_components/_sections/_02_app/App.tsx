@@ -28,7 +28,9 @@ export default function App() {
               src={'/images/02-app/awoken-app-mockup.png'}
               alt='awoken-app-mockup'
               fill
-              style={{ objectFit: 'cover' }} />
+              style={{ objectFit: 'cover' }}
+              unoptimized
+            />
           </div>
           
         
