@@ -81,6 +81,8 @@ export default function Carousel({ carouselType, data }: CarouselProps) {
         }
         fill
         unoptimized
+        loading="lazy"
+        placeholder="blur"
       />
     ))
 

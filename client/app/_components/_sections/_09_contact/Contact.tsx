@@ -54,6 +54,8 @@ export default function Contact() {
               alt={'contact-image'}
               fill
               unoptimized
+              loading="lazy"
+              placeholder="blur"
             />
           </div>
           

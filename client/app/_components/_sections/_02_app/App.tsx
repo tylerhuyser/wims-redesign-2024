@@ -30,6 +30,8 @@ export default function App() {
               fill
               style={{ objectFit: 'cover' }}
               unoptimized
+              loading="lazy"
+              placeholder="blur"
             />
           </div>
           
