@@ -29,7 +29,6 @@ export default function App() {
               alt='awoken-app-mockup'
               fill
               style={{ objectFit: 'cover' }}
-              unoptimized
               loading="lazy"
               placeholder="blur"
             />

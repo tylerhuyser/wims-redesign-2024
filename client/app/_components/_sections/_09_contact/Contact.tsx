@@ -53,7 +53,6 @@ export default function Contact() {
               src={'/images/00-hero/hero-04.jpg'}
               alt={'contact-image'}
               fill
-              unoptimized
               loading="lazy"
               placeholder="blur"
             />
