@@ -69,12 +69,32 @@
   max-height: 32rem;
   aspect-ratio:  1 / 1;
 
-  outline: 1px solid #F39C12;
-  outline-offset: -25px;
+  /* outline: 1px solid #F39C12;
+  outline-offset: -25px; */
+
+  position: relative;
+  display: inline-block;
 }
 
-.videoWrapper:hover {
+/* .videoWrapper:hover {
   outline: 1px solid white;
+} */
+
+.videoWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 25px;
+  /* outline-offset: -25px; */
+  border: 1px solid #F39C12;
+  pointer-events: none;
+}
+
+.videoWrapper::after:hover {
+  border: 1px solid white;
+}
+
+.videoWrapper mux-player {
+  --controls: none;
 }
 
 .video {
@@ -98,6 +118,10 @@
 
   #vrCarouselContainer {
     outline-offset: -25px;
+  }
+
+  .videoWrapper::after{
+    inset: 18px;
   }
 
 }

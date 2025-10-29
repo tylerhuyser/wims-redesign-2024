@@ -9,21 +9,14 @@ export default function VRVideo() {
     <LazySection render={(visible) =>
       visible && (
         <div className={styles.videoWrapper}>
-              
-          <video className={styles.video} autoPlay muted loop>
-            <source src="videos/03-vr-section-video.mp4" type="video/mp4" />
-          </video>
-          
+          <MuxVideo
+            playbackId="GOYL02zY1X6yp00b5as5c02D9i9YBd2t1h4Xyq8O9hlc5w"
+            autoPlay
+            loop
+            muted
+            accentColor="#F39C12"
+          />
         </div>
-        // <div className={styles.videoWrapper}>
-        //   <MuxVideo
-        //   playbackId="hn00CT2l6VdCdw8dyf3XcknP4uP5TB79200VHzn1ssNv8"
-        //   autoPlay
-        //   loop
-        //   muted
-        //   accentColor="#F39C12"
-        //     />
-        // </div>
     )}/>
   )
 }

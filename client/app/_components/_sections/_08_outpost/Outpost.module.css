@@ -57,11 +57,18 @@
   width: 70%;
   aspect-ratio: 16 / 9;
   padding-top: 2rem;
+
+  overflow: hidden;
 }
 
 .videoWrapper:hover {
   width: 80%;
   padding-top: 0rem;
+}
+
+.videoWrapper mux-player {
+  position: relative;
+  left: 1px;
 }
 
 .video {

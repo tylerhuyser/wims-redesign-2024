@@ -17,7 +17,7 @@ export default function MuxVideo({
   autoPlay = false,
   loop = false,
   muted = true,
-  accentColor,
+  accentColor
 }: MuxVideoProps) {
   return (
     <MuxPlayer

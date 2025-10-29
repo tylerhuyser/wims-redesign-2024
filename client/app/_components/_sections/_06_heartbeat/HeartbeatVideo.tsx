@@ -12,7 +12,7 @@ export default function HeartbeatVideo() {
         <div className={styles.videoWrapper}>
           <MuxVideo
             playbackId="7UNFXCc7EmaDT222F8xMoYm9QYhpKjW1RWGdsbXHWyk"
-            autoPlay
+            poster="https://image.mux.com/7UNFXCc7EmaDT222F8xMoYm9QYhpKjW1RWGdsbXHWyk/thumbnail.webp?width=1920&height=1080&time=20"
             loop
             muted
             accentColor="#152c46"

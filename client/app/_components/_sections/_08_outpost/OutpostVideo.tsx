@@ -12,7 +12,7 @@ export default function OutpostVideo() {
         <div className={styles.videoWrapper}>
           <MuxVideo
             playbackId="Nr01r6lF7gn7bjqLibMwIFLtSbgO01fXymZxz8vRO4I3U"
-            autoPlay
+            poster="https://image.mux.com/Nr01r6lF7gn7bjqLibMwIFLtSbgO01fXymZxz8vRO4I3U/thumbnail.webp?width=1920&height=1080&time=122"
             loop
             muted
             accentColor="#152c46"

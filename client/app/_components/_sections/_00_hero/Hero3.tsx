@@ -32,7 +32,7 @@ export default function Hero3() {
         <div className={styles.heroTextContainer}>
           <p className={styles.heroText} id={styles.heroSubtitle}>WELCOME TO A<span className={styles.boldText}>WOKE</span>N</p>
           <p className={styles.heroText} id={styles.heroTitle}>Make the unconscious conscious.</p>
-          <p className={styles.heroText} id={styles.heroTitle}>Make empathy a practice.</p>
+          <p className={styles.heroText} id={styles.heroTitle}>Turn empathy into a practice.</p>
           <p className={styles.heroText} id={styles.heroBody}>
             Our platforms, <span className={styles.boldText}>Awoken App</span> and <span className={styles.boldText}>Awoken VR</span>, help individuals, organizations, and communities grow together.
           </p>
