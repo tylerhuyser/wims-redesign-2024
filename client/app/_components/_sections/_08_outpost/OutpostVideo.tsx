@@ -1,19 +1,24 @@
 "use client";
 
 import LazySection from "../../_shared/_lazy/LazySection";
+import MuxVideo from "../../_shared/_video/MuxVideo"
 import styles from "./Outpost.module.css"
 
 export default function OutpostVideo() { 
   return (
     <LazySection render={(visible) =>
       visible && (
+        
         <div className={styles.videoWrapper}>
-              
-          <video className={styles.video} autoPlay muted loop>
-            <source src="/videos/08-outpost-video.mp4" type="video/mp4" />
-          </video>
-          
-      </div>  
+          <MuxVideo
+            playbackId="Nr01r6lF7gn7bjqLibMwIFLtSbgO01fXymZxz8vRO4I3U"
+            autoPlay
+            loop
+            muted
+            accentColor="#152c46"
+          />
+        </div>
+        
     )}/>
   )
 }
