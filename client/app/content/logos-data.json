@@ -1,27 +1,27 @@
 [
   {
     "name": "AWOKEN-logo-seamless-pattern-navy",
-    "path": "/images/logos/AWOKEN-logo-seamless-pattern-navy.png",
+    "path": "/optimized-images/logos/AWOKEN-logo-seamless-pattern-navy.png",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAOElEQVR4nGOYvOrEfznLoP8JFVP+K9mE/WfQcIz+zyBnBuHImf1nyG1d/N82rOC/V1Ldf9fYyv8AWSkXwOjKeCUAAAAASUVORK5CYII="
   },
   {
     "name": "AWOKEN-logo-seamless-pattern-orange",
-    "path": "/images/logos/AWOKEN-logo-seamless-pattern-orange.png",
+    "path": "/optimized-images/logos/AWOKEN-logo-seamless-pattern-orange.png",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAL0lEQVR4nGP4s1r0/5+VLP//rOL5/2cVx3+GPys5//9exfofRIMkGP6sEoLKQjAAOSggNxkC5CYAAAAASUVORK5CYII="
   },
   {
     "name": "AWOKEN-logo-seamless-pattern-transparent",
-    "path": "/images/logos/AWOKEN-logo-seamless-pattern-transparent.png",
+    "path": "/optimized-images/logos/AWOKEN-logo-seamless-pattern-transparent.png",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAKklEQVR4nC3KwQ0AIBACQdtRT/uv7saQ+IEsy8DFQmGPRHfPdESG8yGPetUnJeIB0yf/AAAAAElFTkSuQmCC"
   },
   {
     "name": "AWOKEN-logo-seamless-pattern-white",
-    "path": "/images/logos/AWOKEN-logo-seamless-pattern-white.png",
+    "path": "/optimized-images/logos/AWOKEN-logo-seamless-pattern-white.png",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAALElEQVR4nGNYv6jrf0a0y/9JLflgmiEr1v1/aoQjmANigwXcrJT/FyT7gQUAm3wZZCZQnQQAAAAASUVORK5CYII="
   },
   {
     "name": "AWOKEN-logo-white",
-    "path": "/images/logos/AWOKEN-logo-white.png",
+    "path": "/optimized-images/logos/AWOKEN-logo-white.png",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAYAAAC09K7GAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nBXIMQ0AIRAAMBQwIAAjJFhgegPvhqCBAaNXQscmHDRMfAkDCz/Ki4qNHhH5AhYTJ+nYiahiAAAAAElFTkSuQmCC"
   }
 ]

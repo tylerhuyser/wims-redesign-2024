@@ -1,22 +1,22 @@
 [
   {
     "name": "panorama-360-1",
-    "path": "/images/04-panorama-360-carousel/panorama-360-1.jpg",
+    "path": "/optimized-images/04-panorama-360-carousel/panorama-360-1.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGNISPDIzHA1M5cW4GZg2H1k0r8/22/fnn/t3kYAeLsMPhf+bh0AAAAASUVORK5CYII="
   },
   {
     "name": "panorama-360-2",
-    "path": "/images/04-panorama-360-carousel/panorama-360-2.jpg",
+    "path": "/optimized-images/04-panorama-360-carousel/panorama-360-2.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGP49evThBkdDNwM89dPZ9i/alVneVGEk82yKRMBsOUMrYJTkKQAAAAASUVORK5CYII="
   },
   {
     "name": "panorama-360-3",
-    "path": "/images/04-panorama-360-carousel/panorama-360-3.jpg",
+    "path": "/optimized-images/04-panorama-360-carousel/panorama-360-3.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGN4/+/Txr3rvYLtUvOjGb5//LRt30leRh5jJR0AxWMMudnxN6wAAAAASUVORK5CYII="
   },
   {
     "name": "panorama-360-4",
-    "path": "/images/04-panorama-360-carousel/panorama-360-4.jpg",
+    "path": "/optimized-images/04-panorama-360-carousel/panorama-360-4.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAI0lEQVR4nGNYvnDS1Wsnfv/5dvzcfgZZBgYHI+2U+CBzfQ0AxL0L7FzaY6EAAAAASUVORK5CYII="
   }
 ]

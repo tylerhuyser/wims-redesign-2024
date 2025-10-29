@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "generate:blur": "node scripts/generate-blur-data.mjs",
+    "prebuild": "node scripts/optimize-images.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

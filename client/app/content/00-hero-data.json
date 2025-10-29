@@ -1,22 +1,22 @@
 [
   {
     "name": "hero-01",
-    "path": "/images/00-hero/hero-01.jpg",
+    "path": "/optimized-images/00-hero/hero-01.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAL0lEQVR4nGNITk7OzMy0sLAwMDBgMDU1raqqysnJsbe3Z2BlZc3MzPz79+/MmTMB5LENtxHSsfEAAAAASUVORK5CYII="
   },
   {
     "name": "hero-02",
-    "path": "/images/00-hero/hero-02.jpg",
+    "path": "/optimized-images/00-hero/hero-02.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMklEQVR4nAEnANj/ALGx5v9yFbnNaf/s/wDzakF/fgAAhJ/i+v8A0ZEdAChxAAFNJnalqwUS6NBlXR8AAAAASUVORK5CYII="
   },
   {
     "name": "hero-03",
-    "path": "/images/00-hero/hero-03.jpg",
+    "path": "/optimized-images/00-hero/hero-03.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAM0lEQVR4nAEoANf/AP++ov/Jq//VvgD/qZKqGCz/d24ApygvcQAA7lFLAJQbJkMAAP9rXb09EknX4gM0AAAAAElFTkSuQmCC"
   },
   {
     "name": "hero-04",
-    "path": "/images/00-hero/hero-04.jpg",
+    "path": "/optimized-images/00-hero/hero-04.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAIAAADETxJQAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAM0lEQVR4nAEoANf/ANjLwau0tOTk4wDLys1+ZGT+/fwAm5SZLQAA+/byALu3tyEwN7S5v/qzF3eja+lUAAAAAElFTkSuQmCC"
   }
 ]

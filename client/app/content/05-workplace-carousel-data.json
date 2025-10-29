@@ -1,27 +1,27 @@
 [
   {
     "name": "workplace-carousel-01",
-    "path": "/images/05-workplace-carousel/workplace-carousel-01.jpg",
+    "path": "/optimized-images/05-workplace-carousel/workplace-carousel-01.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAACTpAAAk6QFQJOf4AAAAMklEQVR4nAEnANj/ACUhJL20stfQz/j5/QAlIyUQAADAtrTy8PIAUU1OOjU0xbm7//7/c/cUMb2HFVkAAAAASUVORK5CYII="
   },
   {
     "name": "workplace-carousel-02",
-    "path": "/images/05-workplace-carousel/workplace-carousel-02.jpg",
+    "path": "/optimized-images/05-workplace-carousel/workplace-carousel-02.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAMklEQVR4nAEnANj/AHl2ef/6+snExuHY2gApJTDj1NSekZTBpqIAIhoajHFhnFtcOAAAvrUTVutUh38AAAAASUVORK5CYII="
   },
   {
     "name": "workplace-carousel-03",
-    "path": "/images/05-workplace-carousel/workplace-carousel-03.jpg",
+    "path": "/optimized-images/05-workplace-carousel/workplace-carousel-03.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAMklEQVR4nAEnANj/AMTAw/bz8/v6+4N7fQBBPUEQAg9fTlWilJgAxcLHkIiLtaerZV1orxoUYc42cKEAAAAASUVORK5CYII="
   },
   {
     "name": "workplace-carousel-04",
-    "path": "/images/05-workplace-carousel/workplace-carousel-04.jpg",
+    "path": "/optimized-images/05-workplace-carousel/workplace-carousel-04.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAMElEQVR4nGP49+/vwxtX+jv7PBwdGJ49eFCVXhgeHM3AyMVw/MhxKyvfvNxKRUUVAKNBEcsWqhipAAAAAElFTkSuQmCC"
   },
   {
     "name": "workplace-carousel-05",
-    "path": "/images/05-workplace-carousel/workplace-carousel-05.jpg",
+    "path": "/optimized-images/05-workplace-carousel/workplace-carousel-05.webp",
     "blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAD2EAAA9hAHVrK90AAAAMklEQVR4nAEnANj/AOXm5qmnp//+/4aCgQD49/enk4b//v9lXVkAIx4dOi8pQj09EAAA63wTp8hUGfkAAAAASUVORK5CYII="
   }
 ]
