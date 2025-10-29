@@ -45,6 +45,7 @@ section, .section {
   align-items: center;
   justify-content: center;
   
+  scroll-margin-top: 75px;
   /* width: 100vw; */
 }
 
@@ -74,6 +75,10 @@ section, .section {
     .main-container {
       min-height: calc(100vh - 80px);
       top: 80px;
+    }
+
+    section, .section {
+      scroll-margin-top: 80px;
     }
   }
   

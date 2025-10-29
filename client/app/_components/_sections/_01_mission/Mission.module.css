@@ -73,6 +73,23 @@
   box-sizing: border-box;
 }
 
+.missionImageContainer {
+  width: 100%;
+  /* height: min(calc(70vh - 4rem), 90vw); */
+  /* max-height: 32rem; */
+  max-width: 32rem;
+  height: auto;
+  aspect-ratio:  1 / 1;
+  position: relative;
+}
+
+.missionImage {
+  /* height: 100%;
+  width: 100%; */
+  object-fit: cover;
+}
+
+
 
 @media only screen and (min-width: 1280px) {
 

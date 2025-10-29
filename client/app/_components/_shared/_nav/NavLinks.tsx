@@ -23,24 +23,32 @@ export default function NavLinks({
     { name: 'CONTACT', path: '#contact' },
   ];
 
-  const handleClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    path: string
-  ) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     e.preventDefault();
 
-    const id = path.replace("#", "");
-    const section = document.getElementById(id);
+    const sectionId = path.replace("#", "");
+    const target = document.getElementById(sectionId);
+    if (!target) return;
 
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      window.history.pushState(null, "", `#${id}`);
-    }
+    // 1. Close Mobile menu
+    if (onLinkClick) onLinkClick();
 
-    if (onLinkClick) onLinkClick?.();
+    // 2. Initiate a Delay for Lazy Loaded Content to Load
+    setTimeout(() => {
+      const headerOffset = window.innerWidth < 1024 ? 75 : 80;
+      const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - headerOffset;
+
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+
+      // 3. Additional Retry for Lazy Content On Lower Reaches of Layout
+      setTimeout(() => {
+        const correctedPos = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({ top: correctedPos, behavior: "smooth" });
+      }, 800);
+    }, 200);
   };
   
-
 
   const containerClass =
   context === "desktop"
