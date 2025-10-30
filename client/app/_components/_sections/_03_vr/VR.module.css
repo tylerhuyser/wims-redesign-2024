@@ -2,7 +2,7 @@
 
 .vrSection {
   width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
   padding-block: 4rem;
 
   background-color: #152c46;
@@ -69,22 +69,14 @@
   max-height: 32rem;
   aspect-ratio:  1 / 1;
 
-  /* outline: 1px solid #F39C12;
-  outline-offset: -25px; */
-
   position: relative;
   display: inline-block;
 }
-
-/* .videoWrapper:hover {
-  outline: 1px solid white;
-} */
 
 .videoWrapper::after {
   content: "";
   position: absolute;
   inset: 25px;
-  /* outline-offset: -25px; */
   border: 1px solid #F39C12;
   pointer-events: none;
 }
@@ -98,7 +90,6 @@
 }
 
 .video {
-
   height: 100%;
   width: 100%;
   object-fit: cover;

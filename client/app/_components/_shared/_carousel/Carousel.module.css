@@ -17,9 +17,6 @@
   align-items: center;
   justify-content: center;
 
-  /* outline: 1px solid #F39C12;
-  outline-offset: -10px; */
-
   font-size: calc(5vw / 2);
   color: white;
   letter-spacing: 10px;
@@ -31,8 +28,6 @@
 }
 
 .carouselMedia {
-  /* height: 100%;
-  width: 100%; */
   object-fit: cover;
 
   outline: 1px solid #F39C12;
@@ -50,7 +45,6 @@
 @media only screen and (min-width: 768px) {
 
   .carouselContainer {
-    /* outline-offset: -25px; */
     animation: slide-in-left ease-in-out 0.75s;
   }
 

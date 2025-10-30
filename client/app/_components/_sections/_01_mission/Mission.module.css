@@ -2,7 +2,7 @@
 
 .missionSection {
   width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
   padding-block: 4rem;
 
   background-color: #152c46;
@@ -57,26 +57,17 @@
 }
 
 #missionCarouselContainer {
-  /* width: auto;
-  height: min(calc(70vh - 4rem), 90vw);
-  max-height: 32rem;
-  aspect-ratio:  1 / 1; */
-
   width: 100%;
   max-width: 32rem;
   height: auto;
   aspect-ratio:  1 / 1;
   position: relative;
-
-  /* outline: 1px solid #F39C12;
-  outline-offset: -10px; */
   box-sizing: border-box;
 }
 
 .missionImageContainer {
   width: 100%;
-  /* height: min(calc(70vh - 4rem), 90vw); */
-  /* max-height: 32rem; */
+
   max-width: 32rem;
   height: auto;
   aspect-ratio:  1 / 1;
@@ -84,8 +75,6 @@
 }
 
 .missionImage {
-  /* height: 100%;
-  width: 100%; */
   object-fit: cover;
 }
 
@@ -102,10 +91,6 @@
   .missionContentContainer { 
     flex-direction: row;
     align-items: flex-start;
-  }
-
-  #missionCarouselContainer {
-    /* outline-offset: -18px; */
   }
 
 }

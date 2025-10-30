@@ -6,7 +6,7 @@ import styles from "./Social.module.css"
 interface SocialLink {
   name: string;
   url: string;
-  icon: any; // FontAwesome expects an `IconDefinition` type
+  icon: any;
   class: string;
 }
 

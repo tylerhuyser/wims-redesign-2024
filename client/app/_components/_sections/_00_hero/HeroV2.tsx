@@ -1,8 +1,8 @@
 import Image from "next/image";
 import heroImages from "../../../content/00-hero-data.json"
-import styles from "./HeroRevised.module.css"
+import styles from "./HeroV2.module.css"
 
-export default function HeroRevised() {
+export default function HeroV2() {
   const heroImagesJSX = heroImages.map((imageData, index) => {
     return (
       <div

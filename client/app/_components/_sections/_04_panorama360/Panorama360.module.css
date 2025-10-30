@@ -131,7 +131,7 @@
   left: 50%;
   width: 60%;
   height: 80%;
-  transform: translate(50%, 50%); /* base centering */
+  transform: translate(50%, 50%);
   transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.3s ease;
 }
 

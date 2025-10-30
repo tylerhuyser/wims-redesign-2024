@@ -4,7 +4,7 @@ import styles from "./NavMenuIcons.module.css"
 
 interface NavMenuIconsProps {
   onClick: () => void,
-  navVisibility: boolean; // Boolean to track nav visibility
+  navVisibility: boolean;
 }
 
 export default function NavMenuIcons({ onClick, navVisibility }: NavMenuIconsProps) {

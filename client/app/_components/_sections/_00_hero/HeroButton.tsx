@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "./Hero3.module.css"
+import styles from "./HeroV3.module.css"
 
 export default function HeroButton() { 
 

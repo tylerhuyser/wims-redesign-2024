@@ -6,13 +6,15 @@ import styles from "./NavLinks.module.css"
 interface NavLinksProps {
   context: 'desktop' | 'mobile'; 
   onLinkClick: (() => void) | null; 
-  navVisibility: boolean; 
+  navVisibility: boolean;
+  setIgnoreScroll: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export default function NavLinks({
   context,
   onLinkClick,
-  navVisibility
+  navVisibility,
+  setIgnoreScroll
 }: NavLinksProps) {
 
   const links = [
@@ -24,8 +26,15 @@ export default function NavLinks({
     { name: 'CONTACT', path: '#contact' },
   ];
 
+  const getOffsetPosition = (element: HTMLElement) => {
+    const headerOffset = window.innerWidth < 1024 ? 75 : 80;
+    return element.getBoundingClientRect().top + window.scrollY - headerOffset
+  };
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     e.preventDefault();
+
+    setIgnoreScroll(true)
 
     const sectionId = path.replace("#", "");
     const target = document.getElementById(sectionId);
@@ -36,18 +45,22 @@ export default function NavLinks({
 
     // 2. Initiate a Delay for Lazy Loaded Content to Load
     setTimeout(() => {
-      const headerOffset = window.innerWidth < 1024 ? 75 : 80;
-      const elementPosition = target.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - headerOffset;
-
+      const offsetPosition = getOffsetPosition(target);
       window.scrollTo({ top: offsetPosition, behavior: "smooth" });
 
-      // 3. Additional Retry for Lazy Content On Lower Reaches of Layout
+      // 3. Additional Retry for Lazy Content On Lower Reaches of Layout -- Overshoots by 1 Pixel
       setTimeout(() => {
-        const correctedPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
-        window.scrollTo({ top: correctedPosition, behavior: "smooth" });
-      }, 800);
-    }, 200);
+        const overshootPosition = offsetPosition + 2;
+        window.scrollTo({ top: overshootPosition, behavior: "smooth" });
+
+        // 4. Nudging Up by 1 pixel so Nav stays visible
+        setTimeout(() => {
+          window.scrollBy(0, -1)
+          setIgnoreScroll(false);
+        }, 50)
+      }, 1000);
+    }, 50);
+
   };
   
 

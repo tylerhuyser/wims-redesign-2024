@@ -1,6 +1,4 @@
 .layout-container {
-  /* width: 100vw; */
-  /* height: 100vh; */
   overflow-x: hidden;
   
   display: flex;
@@ -40,13 +38,14 @@
 }
 
 section, .section {
+  min-height: 135vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   
   scroll-margin-top: 75px;
-  /* width: 100vw; */
 }
 
 .animationContainer {
@@ -78,12 +77,15 @@ section, .section {
     }
 
     section, .section {
+      /* min-height: 100vh; */
       scroll-margin-top: 80px;
     }
   }
   
   @media only screen and (min-width: 1200px) {
-  
+    section, .section {
+      min-height: 80vh;
+    }
   }
   
   @media only screen and (min-width: 1600px) {

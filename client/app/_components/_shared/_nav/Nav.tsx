@@ -13,20 +13,15 @@ import styles from './Nav.module.css'
 
 export default function Nav() {
   const [navVisibility, setNavVisibility] = useState(false)
+  const [ignoreScroll, setIgnoreScroll] = useState(false);
 
   function toggleVisibility(navVisibility: boolean) {
-    const layoutContainer = document.getElementsByClassName('layout-container')
-
-    if (layoutContainer.length > 0) {
-      const element = layoutContainer[0] as HTMLElement;
-
       if (!navVisibility) {
-        element.style.position = 'fixed'
+        document.body.style.overflow = 'hidden';
       } else {
-        element.style.removeProperty('position')
+        document.body.style.removeProperty('overflow')
       }
       setNavVisibility(!navVisibility)
-    }
   }
 
   let windowSize = useWindowSize()
@@ -60,14 +55,14 @@ export default function Nav() {
     <>
       <div 
           className={`${styles.navContainer} ${
-            scrollDirection === 'down' && !scrolledToTop && !navVisibility
+            scrollDirection === 'down' && !scrolledToTop && !navVisibility && !ignoreScroll
               ? styles.navHidden
               : styles.navVisible
           }`}
       >
         <Link href="/" className={styles.navLogoContainer}>
           <Image
-            src="/_assets/AWOKEN-logo-white.png"
+            src="/optimized-images/logos/AWOKEN-logo-white.webp"
             width={50}
             height={50}
             alt="AWOKEN Logo - White"
@@ -75,11 +70,21 @@ export default function Nav() {
           <p className={styles.navLogoTitle}>A<span className={styles.boldText}>WOKE</span>N</p>
         </Link>
 
-        <NavLinks context="desktop" onLinkClick={null} navVisibility={false} />
+        <NavLinks
+          context="desktop"
+          onLinkClick={null}
+          navVisibility={false}
+          setIgnoreScroll={setIgnoreScroll}
+        />
         <NavMenuIcons onClick={() => toggleVisibility(navVisibility)} navVisibility={navVisibility} />
       </div>
     
-      <NavLinks context="mobile" onLinkClick={() => toggleVisibility(navVisibility)} navVisibility={navVisibility} />
+      <NavLinks
+        context="mobile"
+        onLinkClick={() =>
+        toggleVisibility(navVisibility)} navVisibility={navVisibility}
+        setIgnoreScroll={setIgnoreScroll}
+      />
     </>
   )
 }

@@ -1,9 +1,9 @@
 import HeroButton from "./HeroButton";
 import Image from "next/image";
 import heroImages from "../../../content/00-hero-data.json"
-import styles from "./Hero3.module.css"
+import styles from "./HeroV3.module.css"
 
-export default function Hero3() {
+export default function HeroV3() {
   const heroImagesJSX = heroImages.map((imageData, index) => {
     return (
       <div

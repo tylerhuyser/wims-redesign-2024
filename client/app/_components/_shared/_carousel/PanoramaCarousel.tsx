@@ -29,7 +29,6 @@ type PanoramaItem = {
   name: string
 }
 
-// Image-based carousels
 type PanoramaProps = {
   data: PanoramaItem[]
 }
