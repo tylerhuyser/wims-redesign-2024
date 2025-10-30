@@ -6,7 +6,7 @@ import styles from "./Heartbeat.module.css"
 
 export default function HeartbeatVideo() { 
   return (
-    <LazySection render={(visible) =>
+    <LazySection rootMargin="200px" render={(visible) =>
       visible && (
 
         <div className={styles.videoWrapper}>

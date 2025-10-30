@@ -6,8 +6,8 @@
   width: 100%;
   max-width: 100svw;
   height: calc(75px);
-  padding: 0.5rem 2rem;
-  background: #F39C12;
+  /* padding: 0.5rem 2rem; */
+  /* background: #F39C12; */
 
   display: flex;
   justify-content: space-between;
@@ -17,6 +17,15 @@
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.navVisible {
+  transform: translateY(0);
+}
+
+.navHidden {
+  transform: translateY(-75px);
+}
+
+
 /* Logo Container */
 .navLogoContainer {
   display: flex;
@@ -25,6 +34,11 @@
   align-items: center;
 
   text-decoration: none;
+
+  /* NEW */
+  height: 100%;
+  background: #F39C12;
+  padding-left: 2rem;
 }
 
 .navLogoContainer svg {
@@ -39,6 +53,10 @@
 @media only screen and (min-width: 1024px) {
   .navContainer {
     height: calc(100px - 20px);
+  }
+
+  .navHidden {
+    transform: translateY(-80px);
   }
 
   .navLogoContainer svg {

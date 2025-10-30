@@ -5,10 +5,7 @@ import { useEffect, useRef, useState, ReactNode } from "react";
 import lazyStyles from "./LazySection.module.css"
 
 interface LazySectionProps {
-  /** Function that receives `visible` state and returns the content to render */
   render: (visible: boolean) => ReactNode;
-
-  /** Optional: root margin for IntersectionObserver */
   rootMargin?: string;
 }
 
@@ -23,7 +20,7 @@ export default function LazySection({ render, rootMargin = "0px" }: LazySectionP
       ([entry]) => {
         if (entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // Stop observing once visible
+          observer.disconnect();
         }
       },
       { rootMargin }

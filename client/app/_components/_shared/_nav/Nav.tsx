@@ -59,22 +59,11 @@ export default function Nav() {
   return (
     <>
       <div 
-        className={`${styles.navContainer} ${styles.slideInTopNav}`}
-        style={
-          (windowSize.width <= 768 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
-            { transform: 'translateY(0px)', boxShadow: 'none', height: "calc(75px - 20px)" }
-            :
-            (windowSize.width <= 768 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
-              { transform: 'translateY(-75px)', boxShadow: 'none', height: "calc(75px - 20px)" }
-              :
-              (windowSize.width > 768 && scrollDirection === 'up' && !scrolledToTop && !navVisibility) ?
-                { transform: 'translateY(0px)', boxShadow: 'none', height: "calc(100px - 20px)" }
-                :   
-                (windowSize.width > 768 && scrollDirection === 'down' && !scrolledToTop && !navVisibility) ?
-                  { transform: 'translateY(-100px)', boxShadow: 'none', height: "calc(100px - 20px)" }
-                  :
-                  { transform: 'none' }
-        }
+          className={`${styles.navContainer} ${
+            scrollDirection === 'down' && !scrolledToTop && !navVisibility
+              ? styles.navHidden
+              : styles.navVisible
+          }`}
       >
         <Link href="/" className={styles.navLogoContainer}>
           <Image

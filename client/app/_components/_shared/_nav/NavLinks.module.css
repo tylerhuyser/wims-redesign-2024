@@ -36,8 +36,19 @@
   text-decoration: none;
 }
 
+.mobileNavLink:hover {
+  color: #152c46;
+}
+
 .mobileNavLink:not(:first-child) {
   padding-top: 0.5rem;
+}
+
+.externalNavLinkMobile {
+  width: 100%;
+  /* background-color: white;
+  color: #F39C12; */
+  text-align: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -49,6 +60,10 @@
 
     width: 50%;
     flex-grow: 1;
+
+    /* New */
+    height: 100%;
+    background: #F39C12;
   }
 
   .desktopNavLink {
@@ -59,10 +74,29 @@
     margin: 0 1rem;
 
     text-decoration: none;
+
+    /* NEW */
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktopNavLink:hover {
+    color: #152c46;
   }
 
   .desktopNavLink:last-child {
     margin-right: 0px;
+  }
+
+  .externalNavLinkDesktop {
+    background-color: white;
+    color: #F39C12;
+
+    /* NEW */
+    margin-left: 0;
+    padding: 0 2rem;
+    font-weight: 500;
   }
 
   .mobileMenu {

@@ -1,11 +1,12 @@
 'use client'
 
+import Link from "next/link";
 import styles from "./NavLinks.module.css"
 
 interface NavLinksProps {
-  context: 'desktop' | 'mobile'; // Specify that context can only be 'desktop' or 'mobile'
-  onLinkClick: (() => void) | null; // Function or null
-  navVisibility: boolean; // Boolean to track nav visibility
+  context: 'desktop' | 'mobile'; 
+  onLinkClick: (() => void) | null; 
+  navVisibility: boolean; 
 }
 
 export default function NavLinks({
@@ -43,8 +44,8 @@ export default function NavLinks({
 
       // 3. Additional Retry for Lazy Content On Lower Reaches of Layout
       setTimeout(() => {
-        const correctedPos = target.getBoundingClientRect().top + window.scrollY - headerOffset;
-        window.scrollTo({ top: correctedPos, behavior: "smooth" });
+        const correctedPosition = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo({ top: correctedPosition, behavior: "smooth" });
       }, 800);
     }, 200);
   };
@@ -59,6 +60,7 @@ export default function NavLinks({
   
     return (
       <div className={containerClass}>
+
         {links.map((link, index) => (
           <a
             key={index}
@@ -69,6 +71,16 @@ export default function NavLinks({
             {link.name}
           </a>
         ))}
+
+        <Link
+          href="https://brave-neumann-a7bc83.netlify.app/"
+          className={context === 'desktop' ? `${styles.desktopNavLink} ${styles.externalNavLinkDesktop}` : `${styles.mobileNavLink}  ${styles.externalNavLinkMobile}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onLinkClick || undefined}>
+          LOGIN
+        </Link>
+
       </div>
     );
   };

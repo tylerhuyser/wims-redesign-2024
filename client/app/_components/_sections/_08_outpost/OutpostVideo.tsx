@@ -6,7 +6,7 @@ import styles from "./Outpost.module.css"
 
 export default function OutpostVideo() { 
   return (
-    <LazySection render={(visible) =>
+    <LazySection rootMargin="200px" render={(visible) =>
       visible && (
         
         <div className={styles.videoWrapper}>

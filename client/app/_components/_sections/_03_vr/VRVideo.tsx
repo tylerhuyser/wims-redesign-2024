@@ -6,7 +6,7 @@ import styles from "./VR.module.css"
 
 export default function VRVideo() { 
   return (
-    <LazySection render={(visible) =>
+    <LazySection rootMargin="200px" render={(visible) =>
       visible && (
         <div className={styles.videoWrapper}>
           <MuxVideo
