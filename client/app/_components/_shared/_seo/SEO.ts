@@ -1,6 +1,6 @@
 const defaultData = {
   title: "AWOKEN VR",
-  description: "AWOKEN VR - Reimagining diversity, equity, and inclusion.",
+  description: "AWOKEN VR // Make the unconscious conscious. Turn emapthy into a practice.",
   siteUrl: "https://awokenvr.com",
 }
 
