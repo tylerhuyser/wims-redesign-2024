@@ -24,7 +24,7 @@ export const SEO = {
 
   openGraph: {
     title: defaultData.title,
-    // images: ['/_assets/metedataImage.png'],
+    images: ['/images/metadata/metedataImage.png'],
     description: defaultData.description,
     url: defaultData.siteUrl,
     type: "website",
@@ -35,7 +35,7 @@ export const SEO = {
     title: defaultData.title,
     description: defaultData.description,
     creator: "@GameSet_Blog",
-    // images: ['/_assets/metedataImage.png']
+    images: ['/images/metadata/metedataImage.png']
   },
 
   verification: {
