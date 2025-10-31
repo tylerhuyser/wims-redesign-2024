@@ -43,6 +43,7 @@
   text-align: center;
 
   color: white;
+  /* color: #F39C12; */
 }
 
 #panoramaTitle {
@@ -93,7 +94,7 @@
 
   width: 4rem;
   height: calc(80% - 3rem);
-  padding: 1rem;
+  padding: 0.25rem;
 
   color: white;
   font-size: 2rem;
@@ -104,25 +105,30 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 3;
+
+  display: flex;
+  align-items: center;
 }
 
 .leftArrow {
   left: 0;
-  background: linear-gradient(to right, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0));
+  justify-content: flex-start;
+  /* background: linear-gradient(to right, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0)); */
 }
 
 .rightArrow {
   right: 0;
-  background: linear-gradient(to left, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0));
+  justify-content: flex-end;
+  /* background: linear-gradient(to left, rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 1), rgba(243, 156, 18, 0)); */
 }
 
-.leftArrow:hover {
+/* .leftArrow:hover {
   background: linear-gradient(to right, rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 0));
 }
 
 .rightArrow:hover {
   background: linear-gradient(to left, rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 1), rgba(21, 44, 70, 0));
-}
+} */
 
 .panoCarouselMedia {
 
@@ -135,8 +141,15 @@
   transition: transform 0.6s ease, opacity 0.6s ease, z-index 0.3s ease;
 }
 
-.panoCarouselMedia div {
+.pnlm-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: solid white 5px;
+}
+
+.panoCarouselMedia > div:first-child {
   border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border: solid white 10px;
 }
 
 
