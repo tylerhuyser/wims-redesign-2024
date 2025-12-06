@@ -1,3 +1,5 @@
+import ScrollDebugger from "./_components/_shared/_debug/ScrollDebugger";
+
 import { Lato } from "next/font/google"
 
 const lato = Lato({
@@ -43,6 +45,7 @@ export default function RootLayout({
           <Footer />
           
         </div>
+        {/* {process.env.NODE_ENV === 'development' && <ScrollDebugger />} */}
       </body>
     </html>
   )

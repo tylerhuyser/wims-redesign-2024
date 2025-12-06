@@ -10,7 +10,7 @@
 }
 
 .panoramaContentContainer {
-  width: 100%;  
+  width: 100%;
   height: 100%;
 
   display: flex;
@@ -147,9 +147,26 @@
 }
 
 .panoCarouselMedia > div:first-child {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  border: solid white 10px;
+  border: solid white 5px;
 }
 
 
+@media only screen and (min-width: 768px) {
+  .panoramaContentContainer {
+    width: min(90%, 1200px);
+  }
+
+  .leftArrow {
+    left: -0.5rem;
+  }
+  
+  .rightArrow {
+    right: -0.5rem;
+  }
+
+  .panoCarouselMedia > div:first-child {
+    border: solid white 10px;
+  }
+}

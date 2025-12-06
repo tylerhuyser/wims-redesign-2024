@@ -9,6 +9,8 @@ import Community from "./_components/_sections/_07_community/Community"
 import Outpost from "./_components/_sections/_08_outpost/Outpost"
 import Contact from "./_components/_sections/_09_contact/Contact"
 
+export const dynamic = 'force-static'
+
 
 export default function Home() {
   return (

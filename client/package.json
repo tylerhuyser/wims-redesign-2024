@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "generate:blur": "node scripts/generate-blur-data.mjs",
     "prebuild": "node scripts/optimize-images.mjs",
     "build": "next build",

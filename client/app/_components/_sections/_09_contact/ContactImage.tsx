@@ -12,12 +12,12 @@ export default function ContactImage() {
         <div className={styles.contactImageContainer}>
           <Image
             className={styles.contactImage}
-            src={ContactImageData[3].path}
+            src={ContactImageData[1].path}
             alt={'contact-image'}
             fill
             loading="lazy"
             placeholder="blur"
-            blurDataURL={ContactImageData[3].blurDataURL}
+            blurDataURL={ContactImageData[1].blurDataURL}
           />
         </div>
       )}/>

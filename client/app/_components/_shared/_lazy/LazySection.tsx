@@ -9,7 +9,11 @@ interface LazySectionProps {
   delay?: number;
 }
 
-export default function LazySection({ render, rootMargin = "0px", delay }: LazySectionProps) {
+export default function LazySection({
+  render,
+  rootMargin = "200px",
+  delay
+}: LazySectionProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -28,7 +32,10 @@ export default function LazySection({ render, rootMargin = "0px", delay }: LazyS
           observer.disconnect();
         }
       },
-      { rootMargin }
+      {
+        rootMargin,
+        threshold: 0.01
+      }
     );
 
     observer.observe(ref.current);
@@ -36,5 +43,9 @@ export default function LazySection({ render, rootMargin = "0px", delay }: LazyS
     return () => observer.disconnect();
   }, [visible, rootMargin, delay]);
 
-  return <div ref={ref} className={lazyStyles.lazyWrapper}>{render(visible)}</div>;
+  return(
+    <div ref={ref} className={lazyStyles.lazyWrapper}>
+      {render(visible)}
+    </div>
+  )
 }

@@ -55,7 +55,7 @@ export default function PanoramaCarousel({ data }: PanoramaProps) {
   }
 
   return (
-    <LazySection rootMargin="500px" render={(visible) =>
+    <LazySection rootMargin="50px" render={(visible) =>
       visible && (
         <div className={styles.panoCarouselContainer}>
 

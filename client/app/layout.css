@@ -1,5 +1,5 @@
 .layout-container {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   
   display: flex;
   flex-direction: column;
@@ -39,6 +39,7 @@
 
 section, .section {
   min-height: 135vh;
+  /* min-height: auto; */
 
   display: flex;
   flex-direction: column;
@@ -71,6 +72,7 @@ section, .section {
   }
   
   @media only screen and (min-width: 1024px) {
+
     .main-container {
       min-height: calc(100vh - 80px);
       top: 80px;

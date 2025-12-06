@@ -44,23 +44,34 @@ export default function NavLinks({
     if (onLinkClick) onLinkClick();
 
     // 2. Initiate a Delay for Lazy Loaded Content to Load
-    setTimeout(() => {
+    requestAnimationFrame(() => {
       const offsetPosition = getOffsetPosition(target);
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      
+      window.scrollTo({ 
+        top: offsetPosition, 
+        behavior: "smooth" 
+      });
 
-      // 3. Additional Retry for Lazy Content On Lower Reaches of Layout -- Overshoots by 1 Pixel
+      // Single retry after animation completes
       setTimeout(() => {
-        const overshootPosition = offsetPosition + 2;
-        window.scrollTo({ top: overshootPosition, behavior: "smooth" });
-
-        // 4. Nudging Up by 1 pixel so Nav stays visible
+        const finalPosition = getOffsetPosition(target);
+        if (Math.abs(window.scrollY - finalPosition) > 5) {
+          window.scrollTo({ 
+            top: finalPosition, 
+            behavior: "smooth" 
+          });
+        }
+        
+        // Re-enable scroll detection
         setTimeout(() => {
-          window.scrollBy(0, -1)
-          setIgnoreScroll(false);
-        }, 50)
-      }, 1000);
-    }, 50);
-
+          window.scrollBy(0, 1);
+          setTimeout(() => {
+            window.scrollBy(0, -1);
+            setIgnoreScroll(false);
+          }, 50);
+        }, 500);
+      }, 800);
+    });
   };
   
 
