@@ -7,7 +7,7 @@ import styles from "./Contact.module.css"
 
 export default function ContactImage() { 
   return (
-    <LazySection render={(visible) =>
+    <LazySection rootMargin="500px" render={(visible) =>
       visible && (
         <div className={styles.contactImageContainer}>
           <Image

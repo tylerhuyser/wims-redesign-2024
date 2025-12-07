@@ -69,8 +69,8 @@ export default function NavLinks({
             window.scrollBy(0, -1);
             setIgnoreScroll(false);
           }, 50);
-        }, 500);
-      }, 800);
+        }, 1000);
+      }, 500);
     });
   };
   

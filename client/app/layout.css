@@ -1,5 +1,4 @@
 .layout-container {
-  /* overflow-x: hidden; */
   
   display: flex;
   flex-direction: column;
@@ -10,8 +9,6 @@
   background-repeat: repeat;
   background-position: center center;
   background-attachment: fixed;
-
-  /* background-color: #F39C12; */
 
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -38,8 +35,7 @@
 }
 
 section, .section {
-  min-height: 135vh;
-  /* min-height: auto; */
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;

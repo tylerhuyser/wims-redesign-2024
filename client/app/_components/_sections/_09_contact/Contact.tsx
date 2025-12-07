@@ -3,12 +3,17 @@ import FadeUp from "../../_shared/_animations/FadeUp"
 import styles from "./Contact.module.css"
 
 export default function Contact() {
+
   return (
     <section className={`section ${styles.contactSection}`} id="contact">
 
-      <FadeUp>
+      <FadeUp
+        threshold={0.01}
+        bottomMargin="750px"
+        >
+      
         <div className={styles.contactContentContainer}>
-
+      
           <div className={`subsection ${styles.contactSubsection}`} id={styles.contactTextSubsection}>
             <p className={`${styles.contactText} ${styles.contactSubtitle}`}>CONTACT US</p>
             <p className={`${styles.contactText} ${styles.contactTitle}`}>Awaken change in your school, team, or community.</p>
@@ -46,9 +51,10 @@ export default function Contact() {
             </form>
 
           </div>
+        
 
           <ContactImage />
-          
+
 
         </div>
       </FadeUp>

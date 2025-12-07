@@ -54,16 +54,11 @@
 
 .videoWrapper {
   height: auto;
-  width: 70%;
+  width: min(90%, 1200px);
   aspect-ratio: 16 / 9;
   padding-top: 2rem;
 
   overflow: hidden;
-}
-
-.videoWrapper:hover {
-  width: 80%;
-  padding-top: 0rem;
 }
 
 .videoWrapper mux-player {
@@ -76,4 +71,15 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 1024px) {
+  .videoWrapper {
+    width: min(70%, 1080px);
+  }
+
+  .videoWrapper:hover {
+    width: min(80%, 1200px);
+    margin-top: 0rem;
+  }
 }
